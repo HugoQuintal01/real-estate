@@ -1,0 +1,238 @@
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+    
+    body{
+        max-width: 100vw;
+        overflow-x: hidden;
+
+        .cursor{
+            display: none;
+        }
+
+        .anchor-top{
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .menu .pages .page-item{
+            display: none;
+        }
+
+        .menu .pages .page-item.contact-item{
+            display: flex;
+            margin: 0;
+        }
+
+        .cover-section .cover-left .cover-title span{
+            font-size: 3em;
+        }
+
+        .cover-section .cover-left .cover-title p{
+            font-size: 1.8em;
+        }
+
+        .about-section .about-container{
+            flex-wrap: wrap;
+        }
+
+        .about-section .about-container .about-left{
+            padding: 0;
+        }
+
+        .about-section .about-container .about-left h2{
+            font-size: 2em;
+        }
+
+        .about-section .about-container .about-right{
+            padding: 0;
+            margin-top: 20px;
+            border-left: none;
+        }
+
+        .steps-section .steps-title{
+            padding: 50px 15px;
+        }
+
+        .steps-section .steps-title h3{
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .steps-section .steps-container{
+            padding: 0 15px;
+            margin-top: 20px;
+            padding-bottom: 100px;
+        }
+
+        .steps-section .steps-container .steps{
+            padding: 0;
+            border-left: none;
+        }
+
+        .steps-section .steps-container .steps .titleStep h4{
+            text-align: center;
+        }
+
+        .steps-section .steps-container .steps .textStep span{
+            display: flex;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .steps-section .steps-container .last-step-button{
+            min-height: fit-content;
+        }
+
+        .work-section{
+            margin-top: 50px;
+            padding: 50px 0;
+            border-top: none;
+        }
+
+        .work-section .work-container .work-left{
+            padding-right: 15px;
+            border-right: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            h3{
+                text-align: center;
+                font-size: 2em;
+            }
+
+            p{
+                margin-top: 40px;
+                text-align: center;
+            }
+        }
+
+        .work-section .work-container .work-right{
+            padding: 0 15px;
+        }
+
+        .work-section .work-container .work-right .work-item{
+            margin: 30px 0;
+            padding: 15px 0;
+        }
+
+        .work-section .work-container .work-right .work-item .work-item-main a{
+            line-height: 1.2em;
+        }
+
+        .work-section .work-container .work-right{
+            margin-top: 40px;
+            max-height: fit-content;
+        }
+
+        .contact-section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contact-section .contact-container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contact-section .contact-container .contact-left .question-username{
+            margin-top: 40px;
+        }
+
+        .contact-section .contact-container .contact-right{
+            margin-top: 50px;
+            padding: 0 15px;
+            border-left: none;
+        }
+
+        .slick-slider .slick-list .carousel-card img{
+            max-height: 70px;
+        }
+
+        .slick-slider .slick-list .carousel-card span{
+            margin-top: 20px;
+        }
+
+        .last-step-button{
+            display: none;
+        }
+
+        .steps-section .steps-container .steps:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+}
+  
+/* Tablet devices (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    body{
+
+        .cursor{
+            display: none;
+        }
+
+        .menu .pages .page-item{
+            display: none;
+        }
+
+        .menu .pages .page-item.contact-item{
+            display: flex;
+        }
+
+        .cover-section .cover-left .cover-title span{
+            font-size: 4em;
+        }
+
+        .about-section .about-container{
+            flex-wrap: wrap;
+        }
+
+        .about-section .about-container .about-right{
+            margin-top: 50px;
+            padding: 0 40px;
+        }
+
+        .steps-section .steps-container{
+            padding: 100px 15px;
+        }
+
+        .steps-section .steps-container .last-step-button{
+            min-height: fit-content;
+        }
+
+        .work-section .work-container{
+            flex-wrap: wrap;
+        }
+
+        .work-section .work-container .work-left{
+            padding-right: 15px;
+            border-right: none;
+        }
+
+        .work-section .work-container .work-right{
+            margin-top: 50px;
+            border-left: 1px solid $primary;
+            padding-left: 30px;
+            max-height: fit-content;
+        }
+
+        .contact-section .contact-container{
+            flex-wrap: wrap;
+        }
+
+        .contact-section .contact-container .contact-left .question-username{
+            margin-top: 30px;
+        }
+
+        .contact-section .contact-container .contact-right{
+            margin-top: 50px;
+            padding-left: 15px;
+            border-left: none;
+        }
+
+    }
+
+}

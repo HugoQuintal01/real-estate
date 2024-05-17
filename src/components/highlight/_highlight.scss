@@ -1,0 +1,25 @@
+.highlight-section{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+
+    .highlight-title{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $third;
+        }
+
+        span{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+    }
+}

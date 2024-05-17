@@ -1,0 +1,148 @@
+.cover-section{
+    height: 100vh;
+    background-image: url('././assets/house-03.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+
+    .cover-opacity{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $primary50;
+    }
+
+    .cover-text{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        z-index: 1;
+
+        h1{
+            color: $white;
+            font-size: 4em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        p{
+            color: $white;
+            font-size: 1.4em;
+            font-weight: 300;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
+    .cover-search{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        z-index: 1;
+        background-color: $white;
+        padding: 50px 20px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+        .input-div{
+            display: flex;
+            flex-wrap: wrap;
+
+            input, label{
+                width: 100%;
+            }
+
+            label{
+                font-size: 1em;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            select{
+                margin-top: 20px;
+                border: 1px solid $primary;
+                min-width: 100%;
+                padding: 10px 20px;
+                font-size: 1em;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 10px;
+                transition-duration: $animationtime;
+
+                &::-ms-expand{
+                    display: none;
+                }
+
+                &:hover{
+                    background-color: $forth;
+                    color: $white;
+                    border-color: $transparent;
+                }
+            }
+
+            input{
+                min-width: 100%;
+                padding: 0 20px;
+                font-size: 1em;
+                text-transform: capitalize;
+                text-align: center;
+                border-radius: 10px;
+                border: 1px solid $primary;
+                transition-duration: $animationtime;
+
+                &::placeholder{
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                &:hover{
+                    //background-color: $forth;
+                    //color: $white;
+                    //border-color: $transparent;
+
+                    &::placeholder{
+                        //color: $white;
+                    }
+                }
+            }
+        }
+
+        .search-button{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            
+            button{
+                background-color: $forth;
+                color: $white;
+                padding: 10px 30px;
+                border: 1px solid $transparent;
+                border-radius: 10px;
+                font-size: 1em;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition-duration: $animationtime;
+
+                &:hover{
+                    background-color: $third;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+// Normal Imports
+@import './style/reset';
+@import './style/variables';
+@import './style/grid';
+@import './style/fonts';
+
+// Components
+@import './components/menu/menu';
+@import './components/cover/cover';
+@import './components/highlight/highlight';
+
+// Components
+@import './style/responsive';
+
+// HTML, Body Style
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
