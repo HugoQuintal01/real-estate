@@ -747,7 +747,7 @@ p, li, div, span, a {
 .highlight-section .highlight-list {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 .highlight-section .highlight-list .highlight-item {
@@ -758,7 +758,8 @@ p, li, div, span, a {
   border-radius: 15px;
   transition-duration: 0.3s;
   cursor: pointer;
-  margin: 0 10px;
+  margin: 10px;
+  width: calc(33.3333333333% - 120px);
 }
 .highlight-section .highlight-list .highlight-item:hover img {
   transform: scale(1.1);
