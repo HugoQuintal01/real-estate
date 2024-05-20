@@ -528,10 +528,32 @@ p, li, div, span, a {
   border-bottom: 1px solid rgba(21, 21, 21, 0.1254901961);
   background-color: rgba(0, 0, 0, 0);
   border-bottom: 1px solid rgba(0, 0, 0, 0);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
+  transition-duration: 0.3s;
+}
+.menu.menu-active {
+  background-color: #ffffff;
+  z-index: 11;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.menu.menu-active .website-name a {
+  color: #151515;
+}
+.menu.menu-active .pages .page-item a {
+  color: #151515;
+}
+.menu.menu-active .pages .page-item::after {
+  background-color: #151515;
+}
+.menu.menu-active .pages .contact-item a {
+  border-color: #151515;
+}
+.menu.menu-active .pages .contact-item a:hover {
+  background-color: #151515;
+  color: #ffffff;
 }
 .menu .website-name {
   display: flex;
@@ -779,11 +801,26 @@ p, li, div, span, a {
   height: 100%;
   transition-duration: 0.3s;
 }
+.highlight-section .highlight-list .highlight-item .highlight-item-type {
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #1A4D2E;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-type span {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
+}
 .highlight-section .highlight-list .highlight-item .highlight-item-info {
-  padding: 30px;
+  padding: 30px 20px;
 }
 .highlight-section .highlight-list .highlight-item .highlight-item-info .highlight-item-title h4 {
-  font-size: 1em;
+  font-size: 0.8em;
   text-transform: uppercase;
   font-weight: 400;
 }

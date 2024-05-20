@@ -5,10 +5,38 @@
     border-bottom: 1px solid $primary20;
     background-color: $transparent;
     border-bottom: 1px solid $transparent;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    transition-duration: $animationtime;
+
+    &.menu-active{
+        background-color: $white;
+        z-index: 11;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+        .website-name a{
+            color: $primary;
+        }
+
+        .pages .page-item a{
+            color: $primary;
+        }
+
+        .pages .page-item::after{
+            background-color: $primary;
+        }
+
+        .pages .contact-item a{
+            border-color: $primary;
+
+            &:hover{
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
 
     .website-name{
         display: flex;

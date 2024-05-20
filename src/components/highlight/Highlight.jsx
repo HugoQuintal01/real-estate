@@ -20,6 +20,9 @@ const Highlight = () => {
                     <div className="highlight-item-image">
                         <img src={House01} />
                     </div>
+                    <div className="highlight-item-type">
+                        <span>Venda</span>
+                    </div>
                     <div className="highlight-item-info">
                         <div className="highlight-item-title">
                             <h4>Porto Residence</h4>
@@ -37,6 +40,9 @@ const Highlight = () => {
                 <div className="highlight-item col-8 col-t-6 col-d-3">
                     <div className="highlight-item-image">
                         <img src={House02} />
+                    </div>
+                    <div className="highlight-item-type">
+                        <span>Venda</span>
                     </div>
                     <div className="highlight-item-info">
                         <div className="highlight-item-title">
@@ -56,6 +62,9 @@ const Highlight = () => {
                     <div className="highlight-item-image">
                         <img src={House03} />
                     </div>
+                    <div className="highlight-item-type">
+                        <span>Arrendar</span>
+                    </div>
                     <div className="highlight-item-info">
                         <div className="highlight-item-title">
                             <h4>Porto Residence</h4>
@@ -73,6 +82,9 @@ const Highlight = () => {
                 <div className="highlight-item col-8 col-t-6 col-d-3">
                     <div className="highlight-item-image">
                         <img src={House04} />
+                    </div>
+                    <div className="highlight-item-type">
+                        <span>Venda</span>
                     </div>
                     <div className="highlight-item-info">
                         <div className="highlight-item-title">
@@ -92,6 +104,9 @@ const Highlight = () => {
                     <div className="highlight-item-image">
                         <img src={House05} />
                     </div>
+                    <div className="highlight-item-type">
+                        <span>Venda</span>
+                    </div>
                     <div className="highlight-item-info">
                         <div className="highlight-item-title">
                             <h4>Porto Residence</h4>
@@ -109,6 +124,9 @@ const Highlight = () => {
                 <div className="highlight-item col-8 col-t-6 col-d-3">
                     <div className="highlight-item-image">
                         <img src={House06} />
+                    </div>
+                    <div className="highlight-item-type">
+                        <span>Arrendar</span>
                     </div>
                     <div className="highlight-item-info">
                         <div className="highlight-item-title">
@@ -128,6 +146,9 @@ const Highlight = () => {
                     <div className="highlight-item-image">
                         <img src={House07} />
                     </div>
+                    <div className="highlight-item-type">
+                        <span>Venda</span>
+                    </div>
                     <div className="highlight-item-info">
                         <div className="highlight-item-title">
                             <h4>Porto Residence</h4>
@@ -145,6 +166,9 @@ const Highlight = () => {
                 <div className="highlight-item col-8 col-t-6 col-d-3">
                     <div className="highlight-item-image">
                         <img src={House08} />
+                    </div>
+                    <div className="highlight-item-type">
+                        <span>Arrendar</span>
                     </div>
                     <div className="highlight-item-info">
                         <div className="highlight-item-title">
