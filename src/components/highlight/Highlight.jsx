@@ -1,4 +1,8 @@
 import React from "react";
+import House01 from '../../assets/house-03.jpeg';
+import House02 from '../../assets/house-04.jpeg';
+import House03 from '../../assets/house-05.jpeg';
+import House04 from '../../assets/house-06.jpeg';
 
 const Highlight = () => {
     return( 
@@ -9,7 +13,76 @@ const Highlight = () => {
             </div>
             <div className="highlight-list col-12">
                 <div className="highlight-item col-8 col-t-6 col-d-3">
-                    
+                    <div className="highlight-item-image">
+                        <img src={House01} />
+                    </div>
+                    <div className="highlight-item-info">
+                        <div className="highlight-item-title">
+                            <h4>Porto Residence</h4>
+                        </div>
+                        <div className="highlight-item-price">
+                            <span>179.000€</span>
+                        </div>
+                        <div className="highlight-item-more-info">
+                            <span>T3</span>
+                            <span>140 m2</span>
+                            <span>2 wc</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="highlight-item col-8 col-t-6 col-d-3">
+                    <div className="highlight-item-image">
+                        <img src={House02} />
+                    </div>
+                    <div className="highlight-item-info">
+                        <div className="highlight-item-title">
+                            <h4>Porto Residence</h4>
+                        </div>
+                        <div className="highlight-item-price">
+                            <span>179.000€</span>
+                        </div>
+                        <div className="highlight-item-more-info">
+                            <span>T3</span>
+                            <span>140 m2</span>
+                            <span>2 wc</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="highlight-item col-8 col-t-6 col-d-3">
+                    <div className="highlight-item-image">
+                        <img src={House03} />
+                    </div>
+                    <div className="highlight-item-info">
+                        <div className="highlight-item-title">
+                            <h4>Porto Residence</h4>
+                        </div>
+                        <div className="highlight-item-price">
+                            <span>179.000€</span>
+                        </div>
+                        <div className="highlight-item-more-info">
+                            <span>T3</span>
+                            <span>140 m2</span>
+                            <span>2 wc</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="highlight-item col-8 col-t-6 col-d-3">
+                    <div className="highlight-item-image">
+                        <img src={House04} />
+                    </div>
+                    <div className="highlight-item-info">
+                        <div className="highlight-item-title">
+                            <h4>Porto Residence</h4>
+                        </div>
+                        <div className="highlight-item-price">
+                            <span>179.000€</span>
+                        </div>
+                        <div className="highlight-item-more-info">
+                            <span>T3</span>
+                            <span>140 m2</span>
+                            <span>2 wc</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

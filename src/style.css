@@ -744,6 +744,67 @@ p, li, div, span, a {
   margin-top: 10px;
   font-size: 1.2em;
 }
+.highlight-section .highlight-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+.highlight-section .highlight-list .highlight-item {
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  padding: 0;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.highlight-section .highlight-list .highlight-item:hover img {
+  transform: scale(1.1);
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-info {
+  padding: 30px;
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-info .highlight-item-title h4 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-info .highlight-item-price {
+  margin-top: 10px;
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-info .highlight-item-price span {
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #1A4D2E;
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-info .highlight-item-more-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-info .highlight-item-more-info span {
+  margin: 0 15px;
+}
+.highlight-section .highlight-list .highlight-item .highlight-item-info .highlight-item-more-info span:first-child {
+  margin-left: 0;
+}
 
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 767px) {
