@@ -1,0 +1,98 @@
+[
+  {
+      "id": 1,
+      "name": "Apartamento Central",
+      "price": 1200,
+      "description": "Um apartamento luxuoso no centro da cidade.",
+      "category": "Arrendar",
+      "location": "Porto",
+      "imageUrl": "./assets/house-02.jpeg",
+      "meters": "140",
+      "wc": "2",
+      "rooms": "2"
+  },
+  {
+      "id": 2,
+      "name": "Residência Familiar",
+      "price": 320000,
+      "description": "Uma casa espaçosa ideal para uma família.",
+      "category": "Comprar",
+      "location": "Lisboa",
+      "imageUrl": "./assets/house-03.jpeg",
+      "meters": "200",
+      "wc": "3",
+      "rooms": "4"
+  },
+  {
+      "id": 3,
+      "name": "Estúdio Moderno",
+      "price": 900,
+      "description": "Estúdio moderno e confortável, ideal para solteiros.",
+      "category": "Arrendar",
+      "location": "Coimbra",
+      "imageUrl": "./assets/house-04.jpeg",
+      "meters": "50",
+      "wc": "1",
+      "rooms": "1"
+  },
+  {
+      "id": 4,
+      "name": "Moradia Luxuosa",
+      "price": 550000,
+      "description": "Moradia luxuosa com piscina e jardim privado.",
+      "category": "Comprar",
+      "location": "Algarve",
+      "imageUrl": "./assets/house-05.jpeg",
+      "meters": "300",
+      "wc": "4",
+      "rooms": "5"
+  },
+  {
+      "id": 5,
+      "name": "Apartamento Moderno",
+      "price": 1500,
+      "description": "Apartamento moderno com vista para o rio.",
+      "category": "Arrendar",
+      "location": "Porto",
+      "imageUrl": "./assets/house-06.jpeg",
+      "meters": "120",
+      "wc": "2",
+      "rooms": "3"
+  },
+  {
+      "id": 6,
+      "name": "Casa de Campo",
+      "price": 230000,
+      "description": "Casa de campo tranquila com terreno amplo.",
+      "category": "Comprar",
+      "location": "Minho",
+      "imageUrl": "./assets/house-07.jpeg",
+      "meters": "180",
+      "wc": "2",
+      "rooms": "3"
+  },
+  {
+      "id": 7,
+      "name": "Apartamento T2",
+      "price": 1100,
+      "description": "Apartamento T2 com excelente localização.",
+      "category": "Arrendar",
+      "location": "Lisboa",
+      "imageUrl": "./assets/house-08.jpeg",
+      "meters": "100",
+      "wc": "1",
+      "rooms": "2"
+  },
+  {
+      "id": 8,
+      "name": "Vivenda com Vista Mar",
+      "price": 450000,
+      "description": "Vivenda com vista deslumbrante para o mar.",
+      "category": "Comprar",
+      "location": "Cascais",
+      "imageUrl": "./assets/house-09.jpeg",
+      "meters": "250",
+      "wc": "3",
+      "rooms": "4"
+  }
+]

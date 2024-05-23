@@ -838,10 +838,202 @@ p, li, div, span, a {
   margin-top: 30px;
 }
 .highlight-section .highlight-list .highlight-item .highlight-item-info .highlight-item-more-info span {
-  margin: 0 15px;
+  width: 50%;
+  margin: 5px 0;
 }
-.highlight-section .highlight-list .highlight-item .highlight-item-info .highlight-item-more-info span:first-child {
-  margin-left: 0;
+
+.highlight-comprar-section {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.highlight-comprar-section .highlight-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.highlight-comprar-section .highlight-title h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1A4D2E;
+}
+.highlight-comprar-section .highlight-title span {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.highlight-comprar-section .highlight-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.highlight-comprar-section .highlight-list .highlight-item {
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  padding: 0;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  margin: 10px;
+  width: calc(33.3333333333% - 120px);
+}
+.highlight-comprar-section .highlight-list .highlight-item:hover img {
+  transform: scale(1.1);
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-type {
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #1A4D2E;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-type span {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-info {
+  padding: 30px 20px;
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-title h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-price {
+  margin-top: 10px;
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-price span {
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #1A4D2E;
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-more-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.highlight-comprar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-more-info span {
+  width: 50%;
+  margin: 5px 0;
+}
+
+.highlight-arrendar-section {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+.highlight-arrendar-section .highlight-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.highlight-arrendar-section .highlight-title h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1A4D2E;
+}
+.highlight-arrendar-section .highlight-title span {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.highlight-arrendar-section .highlight-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.highlight-arrendar-section .highlight-list .highlight-item {
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  padding: 0;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  margin: 10px;
+  width: calc(33.3333333333% - 120px);
+}
+.highlight-arrendar-section .highlight-list .highlight-item:hover img {
+  transform: scale(1.1);
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-type {
+  position: absolute;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #1A4D2E;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-type span {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-info {
+  padding: 30px 20px;
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-title h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-price {
+  margin-top: 10px;
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-price span {
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #1A4D2E;
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-more-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.highlight-arrendar-section .highlight-list .highlight-item .highlight-item-info .highlight-item-more-info span {
+  width: 50%;
+  margin: 5px 0;
 }
 
 /* Mobile devices (portrait and landscape) */
