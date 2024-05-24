@@ -4,7 +4,7 @@ import imageMap from '../../assets/imageMap';
 import products from "../../products/products.json";
 
 const Highlight = () => {
-    return( 
+    return (
         <section className="highlight-section gridrow">
             <div className="highlight-title col-12">
                 <h2 className="col-12">Mais procurados</h2>

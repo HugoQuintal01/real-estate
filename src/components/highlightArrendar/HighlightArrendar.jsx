@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import imageMap from '../../assets/imageMap';
 import products from "../../products/products.json";
+
 
 const HighlightArrendar = () => {
     const arrendarProducts = products
@@ -15,7 +17,7 @@ const HighlightArrendar = () => {
             </div>
             <div className="highlight-list col-12">
                 {arrendarProducts.map(({ id, name, price, category, imageUrl, rooms, meters, wc }) => (
-                    <div key={id} className="highlight-item col-8 col-t-6 col-d-3">
+                    <Link key={id} to={`/product/${id}`} className="highlight-item col-8 col-t-6 col-d-3">
                         <div className="highlight-item-image">
                             <img src={imageMap[imageUrl]} alt={name} />
                         </div>
@@ -35,7 +37,7 @@ const HighlightArrendar = () => {
                                 <span>{wc} wc</span>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>
