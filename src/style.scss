@@ -6,11 +6,13 @@
 
 // Components
 @import './components/menu/menu';
+@import './components/menuIntern/menuIntern';
 @import './components/cover/cover';
 @import './components/highlight/highlight';
 @import './components/highlightComprar/highlightComprar';
 @import './components/highlightArrendar/highlightArrendar';
 @import './components/productDetail/productDetail';
+@import './components/breadcrumbs/breadcrumbs';
 
 // Responsive
 @import './style/responsive';

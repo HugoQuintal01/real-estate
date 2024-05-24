@@ -7,7 +7,6 @@ import ProductDetail from "./pages/ProductDetail";
 const App = () => {
     return (
         <Router>
-            <Menu />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/product/:productId" element={<ProductDetail />} />
