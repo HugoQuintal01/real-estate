@@ -3,7 +3,7 @@ import ProductDetailComponent from '../components/productDetail/ProductDetail.js
 import Breadcrumbs from "../components/breadcrumbs/Breadcrumbs.jsx";
 import MenuIntern from "../components/menuIntern/MenuIntern.jsx";
 
-const ProductDetail = () => {
+const ProductPage = () => {
     return (
         <>
             <MenuIntern />
@@ -13,4 +13,4 @@ const ProductDetail = () => {
     );
 };
 
-export default ProductDetail;
+export default ProductPage;

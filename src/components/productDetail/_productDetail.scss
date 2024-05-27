@@ -84,7 +84,80 @@
   
     .product-info {
         position: relative;
-      
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        box-sizing: border-box;
+
+        .product-content{
+          padding: 50px;
+          height: 100%;
+          width: 100%;
+
+          .product-category{
+            font-size: 1.4em;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 10px 20px;
+            color: $white;
+            background-color: $forth;
+            border-radius: 15px;
+            letter-spacing: 2px;
+          }
+
+          h1{
+            width: 100%;
+            margin: 10px 0;
+            margin-top: 40px;
+            font-size: 3em;
+            text-transform: uppercase;
+            border-bottom: 1px solid $primary;
+          }
+  
+          p{
+            width: 100%;
+            margin: 10px 0;
+            font-size: 1.2em;
+            font-weight: 400;
+            color: $third;
+          }
+
+          .product-value{
+            font-weight: 700;
+            font-size: 1.2em;
+            
+          }
+
+          .product-description{
+            margin: 20px 0;
+            font-weight: 400;
+            line-height: 1.2em;
+            color: $primary;
+          }
+
+          .product-button{
+            padding: 15px 30px;
+            border-radius: 15px;
+            background-color: $third;
+            color: $white;
+            margin-top: 50px;
+            display: flex;
+            width: fit-content;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition-duration: $animationtime;
+            
+            &:hover{
+              transform: scale(1.1);
+              box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+            }
+          }
+        }
+
+        
+
     }
   }
   

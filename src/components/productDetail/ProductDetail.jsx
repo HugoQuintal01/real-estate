@@ -48,14 +48,17 @@ const ProductDetail = () => {
                 </div>
             </div>
             <div className="product-info col-12 col-t-6 col-d-6">
-                <h1>{name}</h1>
-                <p>{description}</p>
-                <p>Preço: {price.toLocaleString()}€</p>
-                <p>Categoria: {category}</p>
-                <p>Localização: {location}</p>
-                <p>Área: {meters} m²</p>
-                <p>Quartos: {rooms}</p>
-                <p>WC: {wc}</p>
+                <div className="product-content">
+                    <span className="product-category">{category}</span>
+                    <h1 className="product-name">{name}</h1>
+                    <p className="product-description">{description}</p>
+                    <p className="product-price">Preço: <span className="product-value">{price.toLocaleString()}€</span></p>
+                    <p className="product-location">Localização: <span className="product-value">{location}</span></p>
+                    <p className="product-area">Área: <span className="product-value">{meters} m²</span></p>
+                    <p className="product-rooms">Quartos: <span className="product-value">{rooms}</span></p>
+                    <p className="product-wc">WC: <span className="product-value">{wc}</span></p>
+                    <a href="#contact" className="product-button">Contactar</a>
+                </div>
             </div>
         </div>
     );
