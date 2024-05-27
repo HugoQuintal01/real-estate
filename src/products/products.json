@@ -15,7 +15,9 @@
         ],
         "meters": "140",
         "wc": "2",
-        "rooms": "2"
+        "rooms": "2",
+        "publishedBy": "João Silva",
+        "reference": "#0000000001"
     },
     {
         "id": 2,
@@ -33,7 +35,9 @@
         ],
         "meters": "200",
         "wc": "3",
-        "rooms": "4"
+        "rooms": "4",
+        "publishedBy": "Maria Ferreira",
+        "reference": "#0000000002"
     },
     {
         "id": 3,
@@ -51,7 +55,9 @@
         ],
         "meters": "50",
         "wc": "1",
-        "rooms": "1"
+        "rooms": "1",
+        "publishedBy": "Ana Oliveira",
+        "reference": "#0000000003"
     },
     {
         "id": 4,
@@ -69,7 +75,9 @@
         ],
         "meters": "300",
         "wc": "4",
-        "rooms": "5"
+        "rooms": "5",
+        "publishedBy": "João Silva",
+        "reference": "#0000000004"
     },
     {
         "id": 5,
@@ -87,7 +95,9 @@
         ],
         "meters": "120",
         "wc": "2",
-        "rooms": "3"
+        "rooms": "3",
+        "publishedBy": "Maria Ferreira",
+        "reference": "#0000000005"
     },
     {
         "id": 6,
@@ -105,7 +115,9 @@
         ],
         "meters": "180",
         "wc": "2",
-        "rooms": "3"
+        "rooms": "3",
+        "publishedBy": "Ana Oliveira",
+        "reference": "#0000000006"
     },
     {
         "id": 7,
@@ -123,7 +135,9 @@
         ],
         "meters": "100",
         "wc": "1",
-        "rooms": "2"
+        "rooms": "2",
+        "publishedBy": "João Silva",
+        "reference": "#0000000007"
     },
     {
         "id": 8,
@@ -141,6 +155,8 @@
         ],
         "meters": "250",
         "wc": "3",
-        "rooms": "4"
+        "rooms": "4",
+        "publishedBy": "Maria Ferreira",
+        "reference": "#0000000008"
     }
 ]

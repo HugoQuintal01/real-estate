@@ -18,6 +18,8 @@ import House16 from './house-16.jpeg';
 import House17 from './house-17.jpeg';
 import House18 from './house-18.jpeg';
 import House19 from './house-19.jpeg';
+import UserIcon from './user-icon.png';
+import UserIconWhite from './user-icon-white.png';
 
 const imageMap = {
     "./assets/house-01.jpeg": House01,
@@ -39,6 +41,8 @@ const imageMap = {
     "./assets/house-17.jpeg": House17,
     "./assets/house-18.jpeg": House18,
     "./assets/house-19.jpeg": House19,
+    "./assets/user-icon.png": UserIcon,
+    "./assets/user-icon-white.png": UserIconWhite,
 };
 
 export default imageMap;

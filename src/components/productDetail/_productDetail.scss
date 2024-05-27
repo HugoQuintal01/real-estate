@@ -138,25 +138,110 @@
           }
 
           .product-button{
-            padding: 15px 30px;
+            padding: 10px 20px;
             border-radius: 15px;
-            background-color: $third;
-            color: $white;
+            background-color: $transparent;
+            color: $third;
+            border: 1px solid $third;
             margin-top: 50px;
             display: flex;
             width: fit-content;
-            font-size: 1.2em;
+            font-size: 1em;
             text-transform: uppercase;
             transition-duration: $animationtime;
+
+            &:last-child{
+              margin-left: 20px;
+            }
             
             &:hover{
-              transform: scale(1.1);
               box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+              background-color: $third;
+              color: $white;
             }
           }
         }
 
-        
+        .product-contact-info{
+          width: 90%;
+          box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+          padding: 50px;
+          border-radius: 25px;
+          margin-top: 50px;
+          display: flex;
+          justify-content: flex-start;
+          align-content: flex-start;
+          flex-wrap: wrap;
+
+          .published-person{
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            flex-wrap: wrap;
+            width: 65%;
+
+            .published-person-image{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+              background-color: $third;
+              border-radius: 100%;
+              position: relative;
+              max-width: 40px;
+
+              img{
+                width: 100%;
+                height: 100%;
+                max-width: 30px;
+              }
+            }
+
+            .published-person-content{
+              display: flex;
+              justify-content: center;
+              align-content: center;
+              flex-wrap: wrap;
+              margin-left: 10px;
+
+              span{
+                width: 100%;
+                margin: 0;
+              }
+
+              .published-person-name{
+                font-size: 1.2em;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $third;
+              }
+
+              .published-person-title{
+                font-weight: 300;
+                margin-top: 5px;
+              }
+            }
+          }
+
+          .product-reference{
+            width: 35%;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            span{
+              width: 100%;
+              font-weight: 300;
+            }
+
+            .product-reference-value{
+              margin-top: 5px;
+              font-size: 1.2em;
+              font-weight: 400;
+            }
+          }
+
+        }
 
     }
   }

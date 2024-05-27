@@ -21,7 +21,7 @@ const ProductDetail = () => {
         return <div>Produto não encontrado.</div>;
     }
 
-    const { name, price, description, category, location, imageUrl, imageGallery, meters, wc, rooms } = product;
+    const { name, price, description, category, location, imageUrl, imageGallery, meters, wc, rooms, publishedBy, reference } = product;
 
     return (
         <div className="product-detail gridrowfull">
@@ -57,8 +57,25 @@ const ProductDetail = () => {
                     <p className="product-area">Área: <span className="product-value">{meters} m²</span></p>
                     <p className="product-rooms">Quartos: <span className="product-value">{rooms}</span></p>
                     <p className="product-wc">WC: <span className="product-value">{wc}</span></p>
-                    <a href="#contact" className="product-button">Contactar</a>
+                    <div className="product-contact-info">
+                        <div className="published-person">
+                            <div className="published-person-image">
+                                <img src={imageMap["./assets/user-icon-white.png"]} alt={publishedBy} />
+                            </div>
+                            <div className="published-person-content">
+                                <span className="published-person-name">{publishedBy}</span>
+                                <span className="published-person-title">Agente Imobiliário/a</span>
+                            </div>
+                        </div>
+                        <div className="product-reference">
+                            <span>Referência do anúncio:</span>
+                            <span className="product-reference-value">{reference}</span>
+                        </div>
+                        <a href="#contact" className="product-button">Ver Telefone</a>
+                        <a href="#contact" className="product-button">Enviar Mensagem</a>
+                    </div>
                 </div>
+                
             </div>
         </div>
     );
