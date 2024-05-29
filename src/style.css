@@ -1378,6 +1378,10 @@ p, li, div, span, a {
   font-weight: 700;
 }
 
+.category-title-section {
+  padding: 0 15px;
+}
+
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 767px) {
   body {
