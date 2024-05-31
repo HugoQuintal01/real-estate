@@ -1,0 +1,172 @@
+.category-section{
+    padding: 0 15px;
+
+    .category-title{
+        margin-top: 50px;
+
+        h1{
+            font-size: 3em;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        span{
+            font-size: 1.4em;
+            line-height: 1.2em;
+            font-weight: 300;
+            margin-top: 10px;
+            display: block;
+        }
+    }
+
+    .category-content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 100px;
+
+        .category-filters{
+
+            .category-filter{
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                
+                label{
+                    width: 100%;
+                    margin-top: 20px;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    &:first-child{
+                        margin-top: 0;
+                    }
+
+                    & > *{
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+
+                    select{
+                        width: 100%;
+                        font-size: 1em;
+                        padding: 10px;
+                        border-radius: 10px;
+                        border: 1px solid $third;
+                        color: $third;
+                    }
+
+                    input{
+                        width: 100%;
+                        font-size: 1em;
+                        padding: 10px;
+                        border-radius: 10px;
+                        border: 1px solid $third;
+                        color: $third;
+                    }
+                }
+            }
+        }
+
+        .category-items{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .highlight-item{
+                position: relative;
+                overflow: hidden;
+                box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+                padding: 0;
+                border-radius: 15px;
+                transition-duration: $animationtime;
+                cursor: pointer;
+                margin: 10px;
+                width: calc((100% / 4) - 20px);
+    
+                &:hover{
+    
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+    
+                .highlight-item-image{
+                    width: 100%;
+                    height: 250px;
+                    overflow: hidden;
+                    position: relative;
+    
+                    img{
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                        height: 100%;
+                        transition-duration: $animationtime;
+                    }
+                }
+    
+                .highlight-item-type{
+                    position: absolute;
+                    top: 20px;
+                    padding: 10px 20px;
+                    background-color: $third;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    
+                    span{
+                        color: $white;
+                        font-weight: 300;
+                        font-size: 1em;
+                        text-transform: uppercase;
+                    }
+                }
+    
+                .highlight-item-info{
+                    padding: 30px 20px;
+    
+                    .highlight-item-title{
+    
+                        h4{
+                            font-size: 0.8em;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                        }
+                        
+                    }
+    
+                    .highlight-item-price{
+                        margin-top: 10px;
+                        
+                        span{
+                            font-size: 1.6em;
+                            font-weight: 400;
+                            color: $third;
+                        }
+                    }
+    
+                    .highlight-item-more-info{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 30px;
+    
+                        span{
+                            width: 50%;
+                            margin: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
