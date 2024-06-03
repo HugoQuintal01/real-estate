@@ -36,27 +36,33 @@ const CategoryPageTitle = () => {
                         </label>
                         <label>
                             Preço Mínimo:
-                            <input type="number" onChange={e => setPriceRange([Number(e.target.value), priceRange[1]])} />
+                            <input type="range" min="0" max="1000000" value={priceRange[0]} onChange={e => setPriceRange([Number(e.target.value), priceRange[1]])} />
+                            <span>{priceRange[0].toLocaleString()}€</span>
                         </label>
                         <label>
                             Preço Máximo:
-                            <input type="number" onChange={e => setPriceRange([priceRange[0], Number(e.target.value)])} />
+                            <input type="range" min="0" max="1000000" value={priceRange[1]} onChange={e => setPriceRange([priceRange[0], Number(e.target.value)])} />
+                            <span>{priceRange[1].toLocaleString()}€</span>
                         </label>
                         <label>
                             Quartos Mínimos:
-                            <input type="number" onChange={e => setRoomCount([Number(e.target.value), roomCount[1]])} />
+                            <input type="range" min="0" max="10" value={roomCount[0]} onChange={e => setRoomCount([Number(e.target.value), roomCount[1]])} />
+                            <span>{roomCount[0]}</span>
                         </label>
                         <label>
                             Quartos Máximos:
-                            <input type="number" onChange={e => setRoomCount([roomCount[0], Number(e.target.value)])} />
+                            <input type="range" min="0" max="10" value={roomCount[1]} onChange={e => setRoomCount([roomCount[0], Number(e.target.value)])} />
+                            <span>{roomCount[1]}</span>
                         </label>
                         <label>
                             Tamanho Mínimo (m²):
-                            <input type="number" onChange={e => setSizeRange([Number(e.target.value), sizeRange[1]])} />
+                            <input type="range" min="0" max="1000" value={sizeRange[0]} onChange={e => setSizeRange([Number(e.target.value), sizeRange[1]])} />
+                            <span>{sizeRange[0]} m²</span>
                         </label>
                         <label>
                             Tamanho Máximo (m²):
-                            <input type="number" onChange={e => setSizeRange([sizeRange[0], Number(e.target.value)])} />
+                            <input type="range" min="0" max="1000" value={sizeRange[1]} onChange={e => setSizeRange([sizeRange[0], Number(e.target.value)])} />
+                            <span>{sizeRange[1]} m²</span>
                         </label>
                     </div>
                 </div>
