@@ -119,7 +119,7 @@ const CategoryPageTitle = () => {
                             setRoomCount([minRooms, maxRooms]);
                             setSizeRange([minSize, maxSize]);
                             setSortOrder("alphabet-asc");
-                        }}>Reset</button>
+                        }}>Repor</button>
                     </div>
                 </div>
                 <div className="category-items col-12 col-t-10 col-d-10">
