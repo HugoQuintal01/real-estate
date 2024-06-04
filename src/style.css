@@ -1412,7 +1412,7 @@ p, li, div, span, a {
 }
 .category-section .category-content .category-filters .category-filter label {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 400;
@@ -1440,13 +1440,62 @@ p, li, div, span, a {
   font-size: 1em;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #1A4D2E;
   color: #1A4D2E;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 6px;
+  background: rgba(21, 21, 21, 0.1254901961);
+  border: none;
+}
+.category-section .category-content .category-filters .category-filter label input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: #1A4D2E;
+  border-radius: 50%;
+  border: none;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.category-section .category-content .category-filters .category-filter label input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #1A4D2E;
+  border-radius: 50%;
+  border: none;
+  -moz-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.category-section .category-content .category-filters .category-filter label input::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 10px rgba(26, 77, 46, 0.1215686275);
+}
+.category-section .category-content .category-filters .category-filter label input:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgba(26, 77, 46, 0.1215686275);
+}
+.category-section .category-content .category-filters .category-filter label input:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgba(26, 77, 46, 0.1215686275);
+}
+.category-section .category-content .category-filters .category-filter label input::-moz-range-thumb:hover {
+  box-shadow: 0 0 0 10px rgba(26, 77, 46, 0.1215686275);
+}
+.category-section .category-content .category-filters .category-filter label input:active::-moz-range-thumb {
+  box-shadow: 0 0 0 13px rgba(26, 77, 46, 0.1215686275);
+}
+.category-section .category-content .category-filters .category-filter label input:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 13px rgba(26, 77, 46, 0.1215686275);
+}
+.category-section .category-content .category-filters .category-filter label .input-value {
+  margin-top: 0;
 }
 .category-section .category-content .category-items {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }

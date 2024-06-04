@@ -37,7 +37,7 @@
                 
                 label{
                     width: 100%;
-                    margin-top: 20px;
+                    margin-top: 40px;
                     font-size: 1em;
                     text-transform: uppercase;
                     font-weight: 400;
@@ -68,8 +68,59 @@
                         font-size: 1em;
                         padding: 10px;
                         border-radius: 10px;
-                        border: 1px solid $third;
                         color: $third;
+                        -webkit-appearance: none;
+                        appearance: none; 
+                        cursor: pointer;
+                        outline: none;
+                        border-radius: 15px;
+                        height: 6px;
+                        background: $primary20;
+                        border: none;
+
+                        &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            appearance: none; 
+                            height: 15px;
+                            width: 15px;
+                            background-color: $third;
+                            border-radius: 50%;
+                            border: none;
+                            transition: .2s ease-in-out;
+                        }
+
+                        &::-moz-range-thumb {
+                            height: 15px;
+                            width: 15px;
+                            background-color: $third;
+                            border-radius: 50%;
+                            border: none;
+                            transition: .2s ease-in-out;
+                        }
+
+                        &::-webkit-slider-thumb:hover {
+                            box-shadow: 0 0 0 10px $third50;
+                          }
+                        &:active::-webkit-slider-thumb {
+                            box-shadow: 0 0 0 13px $third50;
+                          }
+                        &:focus::-webkit-slider-thumb {
+                            box-shadow: 0 0 0 13px $third50;
+                        }
+
+                        &::-moz-range-thumb:hover {
+                            box-shadow: 0 0 0 10px $third50;
+                          }
+                        &:active::-moz-range-thumb {
+                            box-shadow: 0 0 0 13px $third50;
+                        }
+                        &:focus::-moz-range-thumb {
+                            box-shadow: 0 0 0 13px $third50;
+                        }
+                    }
+
+                    .input-value{
+                        margin-top: 0;
                     }
                 }
             }
@@ -78,7 +129,7 @@
         .category-items{
             position: relative;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: flex-start;
             flex-wrap: wrap;
 
