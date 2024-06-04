@@ -1434,6 +1434,7 @@ p, li, div, span, a {
   border-radius: 10px;
   border: 1px solid #1A4D2E;
   color: #1A4D2E;
+  cursor: pointer;
 }
 .category-section .category-content .category-filters .category-filter label input {
   width: 100%;
@@ -1515,7 +1516,29 @@ p, li, div, span, a {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
+}
+.category-section .category-content .category-items .category-items-order {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.category-section .category-content .category-items .category-items-order .order-by-item {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.category-section .category-content .category-items .category-items-order .order-by-item select {
+  margin-left: 5px;
+  font-size: 1em;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #1A4D2E;
+  color: #1A4D2E;
+  cursor: pointer;
 }
 .category-section .category-content .category-items .highlight-item {
   position: relative;

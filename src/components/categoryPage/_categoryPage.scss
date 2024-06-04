@@ -61,6 +61,7 @@
                         border-radius: 10px;
                         border: 1px solid $third;
                         color: $third;
+                        cursor: pointer;
                     }
 
                     input{
@@ -151,7 +152,32 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
+            align-content: flex-start;
             flex-wrap: wrap;
+
+            .category-items-order{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .order-by-item{
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: nowrap;
+                    align-items: center;
+    
+                    select{
+                        margin-left: 5px;                
+                        font-size: 1em;
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        border: 1px solid #1A4D2E;
+                        color: #1A4D2E;
+                        cursor: pointer;
+                    }
+                }
+            }
 
             .highlight-item{
                 position: relative;

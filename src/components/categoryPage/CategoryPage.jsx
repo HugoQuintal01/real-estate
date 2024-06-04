@@ -14,6 +14,7 @@ const CategoryPageTitle = () => {
     const [maxRooms, setMaxRooms] = useState(0);
     const [minSize, setMinSize] = useState(0);
     const [maxSize, setMaxSize] = useState(0);
+    const [sortOrder, setSortOrder] = useState("alphabet-asc");
 
     useEffect(() => {
         const filteredProducts = products.filter(product => product.category === category);
@@ -40,6 +41,30 @@ const CategoryPageTitle = () => {
             product.rooms >= roomCount[0] && product.rooms <= roomCount[1] &&
             product.meters >= sizeRange[0] && product.meters <= sizeRange[1]
         );
+    });
+
+    const sortedProducts = [...filteredProducts].sort((a, b) => {
+        const [criteria, order] = sortOrder.split("-");
+        let comparison = 0;
+
+        switch (criteria) {
+            case "alphabet":
+                comparison = a.name.localeCompare(b.name);
+                break;
+            case "price":
+                comparison = a.price - b.price;
+                break;
+            case "rooms":
+                comparison = a.rooms - b.rooms;
+                break;
+            case "size":
+                comparison = a.meters - b.meters;
+                break;
+            default:
+                break;
+        }
+
+        return order === "asc" ? comparison : -comparison;
     });
 
     return (
@@ -93,11 +118,27 @@ const CategoryPageTitle = () => {
                             setPriceRange([minPrice, maxPrice]);
                             setRoomCount([minRooms, maxRooms]);
                             setSizeRange([minSize, maxSize]);
+                            setSortOrder("alphabet-asc");
                         }}>Reset</button>
                     </div>
                 </div>
                 <div className="category-items col-12 col-t-10 col-d-10">
-                    {filteredProducts.map(product => (
+                    <div className="category-items-order col-12">
+                        <label className="order-by-item">
+                            Ordenar por:
+                            <select value={sortOrder} onChange={e => setSortOrder(e.target.value)}>
+                                <option value="alphabet-asc">Alfabeto (A-Z)</option>
+                                <option value="alphabet-desc">Alfabeto (Z-A)</option>
+                                <option value="price-asc">Preço (Crescente)</option>
+                                <option value="price-desc">Preço (Decrescente)</option>
+                                <option value="rooms-asc">Número de Quartos (Crescente)</option>
+                                <option value="rooms-desc">Número de Quartos (Decrescente)</option>
+                                <option value="size-asc">Tamanho (Crescente)</option>
+                                <option value="size-desc">Tamanho (Decrescente)</option>
+                            </select>
+                        </label>
+                    </div>
+                    {sortedProducts.map(product => (
                         <Link to={`/product/${product.id}`} className="highlight-item col-8 col-t-6 col-d-3" key={product.id}>
                             <div className="highlight-item-image">
                                 <img src={imageMap[product.imageUrl]} alt={product.name} />
