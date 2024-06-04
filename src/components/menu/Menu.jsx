@@ -27,13 +27,10 @@ const Menu = () => {
       </div>
       <div className="pages col-d-8 col-6 col-t-6">
         <div className="page-item">
-          <a href="/comprar">Comprar</a>
-        </div>
-        <div className="page-item">
-          <a href="#work">Arrendar</a>
+          <a href="/lista-imoveis">Imóveis</a>
         </div>
         <div className="page-item contact-item">
-          <a href="#scrollDown">Contact</a>
+          <a href="#scrollDown">Contactar</a>
         </div>
       </div>
     </section>

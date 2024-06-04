@@ -1,29 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import products from "../../products/products.json";
 import imageMap from '../../assets/imageMap';
 
 const CategoryPageTitle = () => {
-    const minPrice = Math.min(...products.map(product => product.price));
-    const maxPrice = Math.max(...products.map(product => product.price));
-    const minRooms = Math.min(...products.map(product => product.rooms));
-    const maxRooms = Math.max(...products.map(product => product.rooms));
-    const minSize = Math.min(...products.map(product => product.meters));
-    const maxSize = Math.max(...products.map(product => product.meters));
-
     const [category, setCategory] = useState("Comprar");
-    const [priceRange, setPriceRange] = useState([minPrice, maxPrice]);
-    const [roomCount, setRoomCount] = useState([minRooms, maxRooms]);
-    const [sizeRange, setSizeRange] = useState([minSize, maxSize]);
+    const [priceRange, setPriceRange] = useState([0, 0]);
+    const [roomCount, setRoomCount] = useState([0, 0]);
+    const [sizeRange, setSizeRange] = useState([0, 0]);
+    const [minPrice, setMinPrice] = useState(0);
+    const [maxPrice, setMaxPrice] = useState(0);
+    const [minRooms, setMinRooms] = useState(0);
+    const [maxRooms, setMaxRooms] = useState(0);
+    const [minSize, setMinSize] = useState(0);
+    const [maxSize, setMaxSize] = useState(0);
+
+    useEffect(() => {
+        const filteredProducts = products.filter(product => product.category === category);
+        if (filteredProducts.length > 0) {
+            setMinPrice(Math.min(...filteredProducts.map(product => product.price)));
+            setMaxPrice(Math.max(...filteredProducts.map(product => product.price)));
+            setMinRooms(Math.min(...filteredProducts.map(product => product.rooms)));
+            setMaxRooms(Math.max(...filteredProducts.map(product => product.rooms)));
+            setMinSize(Math.min(...filteredProducts.map(product => product.meters)));
+            setMaxSize(Math.max(...filteredProducts.map(product => product.meters)));
+        }
+    }, [category]);
+
+    useEffect(() => {
+        setPriceRange([minPrice, maxPrice]);
+        setRoomCount([minRooms, maxRooms]);
+        setSizeRange([minSize, maxSize]);
+    }, [minPrice, maxPrice, minRooms, maxRooms, minSize, maxSize]);
 
     const filteredProducts = products.filter(product => {
-        const minPrice = category === "Comprar" ? Math.min(...products.map(product => product.price)) : Math.min(...products.filter(product => product.category === "Arrendar").map(product => product.price));
-        const maxPrice = category === "Comprar" ? Math.max(...products.map(product => product.price)) : Math.max(...products.filter(product => product.category === "Arrendar").map(product => product.price));
-        const minRooms = category === "Comprar" ? Math.min(...products.map(product => product.rooms)) : Math.min(...products.filter(product => product.category === "Arrendar").map(product => product.rooms));
-        const maxRooms = category === "Comprar" ? Math.max(...products.map(product => product.rooms)) : Math.max(...products.filter(product => product.category === "Arrendar").map(product => product.rooms));
-        const minSize = category === "Comprar" ? Math.min(...products.map(product => product.meters)) : Math.min(...products.filter(product => product.category === "Arrendar").map(product => product.meters));
-        const maxSize = category === "Comprar" ? Math.max(...products.map(product => product.meters)) : Math.max(...products.filter(product => product.category === "Arrendar").map(product => product.meters));
-    
         return (
             product.category === category &&
             product.price >= priceRange[0] && product.price <= priceRange[1] &&
@@ -32,7 +42,7 @@ const CategoryPageTitle = () => {
         );
     });
 
-    return(
+    return (
         <section className="category-section gridrowfull">
             <div className="category-title col-12">
                 <h1>Encontramos {filteredProducts.length} Imóveis para {category.toLowerCase()}</h1>
@@ -51,12 +61,12 @@ const CategoryPageTitle = () => {
                         <label>
                             Preço Mínimo:
                             <input type="range" min={minPrice} max={maxPrice} value={priceRange[0]} onChange={e => setPriceRange([Number(e.target.value), priceRange[1]])} />
-                            <span>{priceRange[0].toLocaleString()}€</span>
+                            <span className="input-value">{priceRange[0].toLocaleString()}€</span>
                         </label>
                         <label>
                             Preço Máximo:
                             <input type="range" min={minPrice} max={maxPrice} value={priceRange[1]} onChange={e => setPriceRange([priceRange[0], Number(e.target.value)])} />
-                            <span>{priceRange[1].toLocaleString()}€</span>
+                            <span className="input-value">{priceRange[1].toLocaleString()}€</span>
                         </label>
                         <label>
                             Quartos Mínimos:
@@ -66,17 +76,17 @@ const CategoryPageTitle = () => {
                         <label>
                             Quartos Máximos:
                             <input type="range" min={minRooms} max={maxRooms} value={roomCount[1]} onChange={e => setRoomCount([roomCount[0], Number(e.target.value)])} />
-                            <span>{roomCount[1]}</span>
+                            <span className="input-value">{roomCount[1]}</span>
                         </label>
                         <label>
                             Tamanho Mínimo (m²):
                             <input type="range" min={minSize} max={maxSize} value={sizeRange[0]} onChange={e => setSizeRange([Number(e.target.value), sizeRange[1]])} />
-                            <span>{sizeRange[0]} m²</span>
+                            <span className="input-value">{sizeRange[0]} m²</span>
                         </label>
                         <label>
                             Tamanho Máximo (m²):
                             <input type="range" min={minSize} max={maxSize} value={sizeRange[1]} onChange={e => setSizeRange([sizeRange[0], Number(e.target.value)])} />
-                            <span>{sizeRange[1]} m²</span>
+                            <span className="input-value">{sizeRange[1]} m²</span>
                         </label>
                         <button className="reset-button" onClick={() => {
                             setCategory("Comprar");
