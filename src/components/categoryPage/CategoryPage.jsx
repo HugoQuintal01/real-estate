@@ -70,7 +70,7 @@ const CategoryPageTitle = () => {
     return (
         <section className="category-section gridrowfull">
             <div className="category-title col-12">
-                <h1>Encontramos {filteredProducts.length} Imóveis para {category.toLowerCase()}</h1>
+                <h1>Encontramos {filteredProducts.length} imóveis para {category.toUpperCase()}</h1>
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga, maxime laudantium enim doloremque velit eligendi sapiente, beatae quisquam consequatur ipsum id et molestias. Ab illo ducimus eligendi aliquid quo reprehenderit deleniti exercitationem? Iste quam eaque consectetur enim, expedita a.</span>
             </div>
             <div className="category-content col-12">

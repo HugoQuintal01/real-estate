@@ -1386,8 +1386,12 @@ p, li, div, span, a {
 }
 .category-section .category-title h1 {
   font-size: 3em;
-  text-transform: uppercase;
+  text-transform: normal;
   font-weight: 700;
+  color: #1A4D2E;
+}
+.category-section .category-title h1 span {
+  color: black;
 }
 .category-section .category-title span {
   font-size: 1.4em;
