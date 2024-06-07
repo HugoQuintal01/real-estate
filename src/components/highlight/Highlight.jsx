@@ -4,6 +4,11 @@ import imageMap from '../../assets/imageMap';
 import products from "../../products/products.json";
 
 const Highlight = () => {
+    // Sort products by id in descending order and slice the latest 6 products
+    const latestProducts = [...products]
+        .sort((a, b) => b.id - a.id)
+        .slice(0, 8);
+
     return (
         <section className="highlight-section gridrow">
             <div className="highlight-title col-12">
@@ -11,7 +16,7 @@ const Highlight = () => {
                 <span className="col-12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, suscipit.</span>
             </div>
             <div className="highlight-list col-12">
-                {products.map(({ id, name, price, category, imageUrl, rooms, meters, wc }) => (
+                {latestProducts.map(({ id, name, price, category, imageUrl, rooms, meters, wc }) => (
                     <Link key={id} to={`/product/${id}`} className="highlight-item col-8 col-t-6 col-d-3">
                         <div className="highlight-item-image">
                             <img src={imageMap[imageUrl]} alt={name} />

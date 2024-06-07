@@ -158,5 +158,425 @@
         "rooms": "4",
         "publishedBy": "Maria Ferreira",
         "reference": "#0000000008"
+    },
+    {
+        "id": 9,
+        "name": "Loft de Luxo no Porto",
+        "price": 1800,
+        "description": "Um loft estiloso localizado no coração do Porto, perfeito para quem aprecia um estilo de vida contemporâneo. Este espaço de 160 metros quadrados apresenta um design de planta aberta com tetos altos e muita luz natural. Com 2 quartos espaçosos, 2 casas de banho modernas e uma cozinha elegante equipada com eletrodomésticos de última geração, este loft oferece o estilo de vida urbano definitivo. Desfrute de fácil acesso a restaurantes, lojas e transporte público.",
+        "category": "Arrendar",
+        "location": "Porto",
+        "imageUrl": "./assets/house-03.jpeg",
+        "imageGallery": [
+            "./assets/house-04.jpeg",
+            "./assets/house-05.jpeg",
+            "./assets/house-06.jpeg",
+            "./assets/house-07.jpeg"
+        ],
+        "meters": "160",
+        "wc": "2",
+        "rooms": "2",
+        "publishedBy": "Sofia Rodrigues",
+        "reference": "#0000000009"
+    },
+    {
+        "id": 10,
+        "name": "Casa de Campo Aconchegante em Sintra",
+        "price": 280000,
+        "description": "Desfrute do charme de Sintra com esta casa de campo aconchegante situada em um ambiente tranquilo. Com 120 metros quadrados de espaço habitacional, esta casa oferece 2 quartos confortáveis, 1 casa de banho moderna e uma cozinha bem equipada. A área de estar convidativa dispõe de uma lareira, perfeita para noites acolhedoras. Saia para um jardim privado, ideal para relaxar ao ar livre e jantar. Escape do agito, mas ainda esteja perto das encantadoras atrações de Sintra.",
+        "category": "Comprar",
+        "location": "Sintra",
+        "imageUrl": "./assets/house-02.jpeg",
+        "imageGallery": [
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg",
+            "./assets/house-05.jpeg",
+            "./assets/house-06.jpeg"
+        ],
+        "meters": "120",
+        "wc": "1",
+        "rooms": "2",
+        "publishedBy": "Carlos Martins",
+        "reference": "#0000000010"
+    },
+    {
+        "id": 11,
+        "name": "Apartamento Elegante em Lisboa",
+        "price": 1400,
+        "description": "Apartamento elegante localizado numa área privilegiada de Lisboa, ideal para quem procura um estilo de vida moderno e confortável. Com 90 metros quadrados, este apartamento dispõe de 2 quartos, 2 casas de banho e uma cozinha moderna e totalmente equipada. A sala de estar é espaçosa e luminosa, com uma varanda que oferece uma vista encantadora da cidade. Perto de transportes públicos, lojas e restaurantes, este apartamento é perfeito para quem deseja viver com estilo no coração de Lisboa.",
+        "category": "Arrendar",
+        "location": "Lisboa",
+        "imageUrl": "./assets/house-06.jpeg",
+        "imageGallery": [
+            "./assets/house-07.jpeg",
+            "./assets/house-08.jpeg",
+            "./assets/house-09.jpeg",
+            "./assets/house-02.jpeg"
+        ],
+        "meters": "90",
+        "wc": "2",
+        "rooms": "2",
+        "publishedBy": "Laura Santos",
+        "reference": "#0000000011"
+    },
+    {
+        "id": 12,
+        "name": "Vivenda Espetacular no Algarve",
+        "price": 600000,
+        "description": "Vivenda espetacular no Algarve com piscina privativa e vista para o mar. Esta propriedade de 320 metros quadrados inclui 4 quartos luxuosos, 3 casas de banho elegantes e uma cozinha gourmet. A sala de estar é ampla e luminosa, com acesso direto ao terraço e à área da piscina. O jardim bem cuidado oferece um ambiente relaxante e exclusivo. Perfeito para quem busca uma vida de luxo junto à costa.",
+        "category": "Comprar",
+        "location": "Algarve",
+        "imageUrl": "./assets/house-05.jpeg",
+        "imageGallery": [
+            "./assets/house-02.jpeg",
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg",
+            "./assets/house-06.jpeg"
+        ],
+        "meters": "320",
+        "wc": "3",
+        "rooms": "4",
+        "publishedBy": "Tiago Almeida",
+        "reference": "#0000000012"
+    },
+    {
+        "id": 13,
+        "name": "Apartamento T3 em Coimbra",
+        "price": 1300,
+        "description": "Apartamento T3 moderno localizado em Coimbra, ideal para famílias ou grupos de estudantes. Com 110 metros quadrados, este apartamento oferece 3 quartos confortáveis, 2 casas de banho modernas e uma cozinha totalmente equipada. A sala de estar é espaçosa e luminosa, proporcionando um ambiente perfeito para relaxar. Próximo a universidades, cafés e centros culturais, este apartamento é perfeito para quem deseja viver no coração de Coimbra.",
+        "category": "Arrendar",
+        "location": "Coimbra",
+        "imageUrl": "./assets/house-04.jpeg",
+        "imageGallery": [
+            "./assets/house-05.jpeg",
+            "./assets/house-06.jpeg",
+            "./assets/house-07.jpeg",
+            "./assets/house-08.jpeg"
+        ],
+        "meters": "110",
+        "wc": "2",
+        "rooms": "3",
+        "publishedBy": "Inês Pereira",
+        "reference": "#0000000013"
+    },
+    {
+        "id": 14,
+        "name": "Moradia Tradicional no Minho",
+        "price": 250000,
+        "description": "Moradia tradicional situada na pitoresca região do Minho. Com 190 metros quadrados, esta propriedade oferece 3 quartos espaçosos, 2 casas de banho modernas e uma cozinha ampla. A sala de estar é acolhedora, com uma lareira tradicional. O grande terreno ao redor da casa é perfeito para atividades ao ar livre e jardinagem. Ideal para quem busca um refúgio tranquilo no campo.",
+        "category": "Comprar",
+        "location": "Minho",
+        "imageUrl": "./assets/house-07.jpeg",
+        "imageGallery": [
+            "./assets/house-04.jpeg",
+            "./assets/house-05.jpeg",
+            "./assets/house-06.jpeg",
+            "./assets/house-07.jpeg"
+        ],
+        "meters": "190",
+        "wc": "2",
+        "rooms": "3",
+        "publishedBy": "Ana Oliveira",
+        "reference": "#0000000014"
+    },
+    {
+        "id": 15,
+        "name": "Apartamento T1 em Lisboa",
+        "price": 1000,
+        "description": "Apartamento T1 bem localizado em Lisboa, ideal para solteiros ou jovens casais. Com 60 metros quadrados, este apartamento oferece um quarto confortável, uma casa de banho moderna e uma cozinha totalmente equipada. A sala de estar é luminosa e possui uma pequena varanda. Próximo a transportes públicos, lojas e restaurantes, este apartamento é perfeito para quem deseja viver no centro da cidade.",
+        "category": "Arrendar",
+        "location": "Lisboa",
+        "imageUrl": "./assets/house-08.jpeg",
+        "imageGallery": [
+            "./assets/house-09.jpeg",
+            "./assets/house-02.jpeg",
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg"
+        ],
+        "meters": "60",
+        "wc": "1",
+        "rooms": "1",
+        "publishedBy": "João Silva",
+        "reference": "#0000000015"
+    },
+    {
+        "id": 16,
+        "name": "Casa de Praia em Cascais",
+        "price": 500000,
+        "description": "Casa de praia em Cascais com vista deslumbrante para o mar. Com 240 metros quadrados, esta propriedade oferece 3 quartos espaçosos, 2 casas de banho modernas e uma cozinha equipada. A sala de estar é luminosa e possui acesso a um terraço com vistas panorâmicas do oceano. O jardim bem cuidado é perfeito para relaxar e desfrutar do ambiente costeiro. Ideal para quem deseja uma vida tranquila junto ao mar.",
+        "category": "Comprar",
+        "location": "Cascais",
+        "imageUrl": "./assets/house-09.jpeg",
+        "imageGallery": [
+            "./assets/house-02.jpeg",
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg",
+            "./assets/house-05.jpeg"
+        ],
+        "meters": "240",
+        "wc": "2",
+        "rooms": "3",
+        "publishedBy": "Maria Ferreira",
+        "reference": "#0000000016"
+    },
+    {
+        "id": 17,
+        "name": "Apartamento T4 no Porto",
+        "price": 2100,
+        "description": "Apartamento T4 de luxo localizado no Porto, perfeito para famílias grandes ou grupos. Com 180 metros quadrados, este apartamento oferece 4 quartos espaçosos, 3 casas de banho modernas e uma cozinha totalmente equipada. A sala de estar é ampla e possui uma varanda com uma vista incrível para a cidade. Perto de escolas, parques e serviços essenciais, este apartamento é ideal para quem deseja viver com conforto e estilo.",
+        "category": "Arrendar",
+        "location": "Porto",
+        "imageUrl": "./assets/house-02.jpeg",
+        "imageGallery": [
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg",
+            "./assets/house-05.jpeg",
+            "./assets/house-06.jpeg"
+        ],
+        "meters": "180",
+        "wc": "3",
+        "rooms": "4",
+        "publishedBy": "João Silva",
+        "reference": "#0000000017"
+    },
+    {
+        "id": 18,
+        "name": "Chalé Rústico no Gerês",
+        "price": 320000,
+        "description": "Chalé rústico localizado na bela região do Gerês. Com 150 metros quadrados, esta propriedade oferece 3 quartos aconchegantes, 2 casas de banho modernas e uma cozinha tradicional. A sala de estar possui uma lareira acolhedora e vistas deslumbrantes da paisagem circundante. O terreno ao redor do chalé é perfeito para caminhadas e atividades ao ar livre. Ideal para quem busca um refúgio na natureza.",
+        "category": "Comprar",
+        "location": "Gerês",
+        "imageUrl": "./assets/house-03.jpeg",
+        "imageGallery": [
+            "./assets/house-04.jpeg",
+            "./assets/house-05.jpeg",
+            "./assets/house-06.jpeg",
+            "./assets/house-07.jpeg"
+        ],
+        "meters": "150",
+        "wc": "2",
+        "rooms": "3",
+        "publishedBy": "Carlos Martins",
+        "reference": "#0000000018"
+    },
+    {
+        "id": 19,
+        "name": "Penthouse com Vista Rio",
+        "price": 3500,
+        "description": "Penthouse exclusiva com vista panorâmica para o rio, localizada no Porto. Com 200 metros quadrados, esta propriedade de luxo oferece 3 quartos espaçosos, 3 casas de banho elegantes e uma cozinha gourmet. A sala de estar é ampla e luminosa, com acesso direto a um terraço espetacular. Desfrute de uma vida de luxo com vistas deslumbrantes e todas as comodidades modernas.",
+        "category": "Arrendar",
+        "location": "Porto",
+        "imageUrl": "./assets/house-04.jpeg",
+        "imageGallery": [
+            "./assets/house-05.jpeg",
+            "./assets/house-06.jpeg",
+            "./assets/house-07.jpeg",
+            "./assets/house-08.jpeg"
+        ],
+        "meters": "200",
+        "wc": "3",
+        "rooms": "3",
+        "publishedBy": "Sofia Rodrigues",
+        "reference": "#0000000019"
+    },
+    {
+        "id": 20,
+        "name": "Casa de Luxo em Vilamoura",
+        "price": 750000,
+        "description": "Casa de luxo situada na prestigiada área de Vilamoura, no Algarve. Com 350 metros quadrados, esta propriedade oferece 5 quartos espaçosos, 4 casas de banho modernas e uma cozinha gourmet. A sala de estar é luminosa e tem acesso a um terraço com vistas para o jardim e a piscina. Ideal para quem deseja uma vida de luxo com todas as comodidades modernas.",
+        "category": "Comprar",
+        "location": "Vilamoura",
+        "imageUrl": "./assets/house-05.jpeg",
+        "imageGallery": [
+            "./assets/house-09.jpeg",
+            "./assets/house-02.jpeg",
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg"
+        ],
+        "meters": "350",
+        "wc": "4",
+        "rooms": "5",
+        "publishedBy": "Tiago Almeida",
+        "reference": "#0000000020"
+    },
+    {
+        "id": 21,
+        "name": "Apartamento T2 Moderno em Braga",
+        "price": 1200,
+        "description": "Apartamento T2 moderno localizado no centro de Braga, ideal para jovens profissionais ou pequenas famílias. Com 95 metros quadrados, este apartamento oferece 2 quartos confortáveis, 2 casas de banho modernas e uma cozinha totalmente equipada. A sala de estar é luminosa e possui uma varanda. Próximo a lojas, restaurantes e transportes públicos, este apartamento é perfeito para quem deseja viver com conforto no coração de Braga.",
+        "category": "Arrendar",
+        "location": "Braga",
+        "imageUrl": "./assets/house-06.jpeg",
+        "imageGallery": [
+            "./assets/house-07.jpeg",
+            "./assets/house-08.jpeg",
+            "./assets/house-09.jpeg",
+            "./assets/house-02.jpeg"
+        ],
+        "meters": "95",
+        "wc": "2",
+        "rooms": "2",
+        "publishedBy": "Laura Santos",
+        "reference": "#0000000021"
+    },
+    {
+        "id": 22,
+        "name": "Vivenda Espaçosa em Évora",
+        "price": 320000,
+        "description": "Vivenda espaçosa situada em Évora, ideal para famílias que valorizam conforto e qualidade de vida. Com 210 metros quadrados, esta casa oferece 4 quartos amplos, 3 casas de banho modernas e uma cozinha totalmente equipada. A sala de estar é perfeita para momentos de convívio, com uma lareira acolhedora e acesso ao jardim privado. Localizada em uma área tranquila, mas próxima de todas as comodidades essenciais.",
+        "category": "Comprar",
+        "location": "Évora",
+        "imageUrl": "./assets/house-07.jpeg",
+        "imageGallery": [
+            "./assets/house-04.jpeg",
+            "./assets/house-05.jpeg",
+            "./assets/house-06.jpeg",
+            "./assets/house-07.jpeg"
+        ],
+        "meters": "210",
+        "wc": "3",
+        "rooms": "4",
+        "publishedBy": "Ana Oliveira",
+        "reference": "#0000000022"
+    },
+    {
+        "id": 23,
+        "name": "Apartamento T3 em Faro",
+        "price": 1350,
+        "description": "Apartamento T3 situado em Faro, ideal para famílias ou grupos de amigos. Com 105 metros quadrados, este apartamento oferece 3 quartos confortáveis, 2 casas de banho modernas e uma cozinha equipada. A sala de estar é espaçosa e tem uma varanda com vista para a cidade. Próximo a escolas, supermercados e transportes públicos, este apartamento é perfeito para quem deseja viver com conforto e conveniência.",
+        "category": "Arrendar",
+        "location": "Faro",
+        "imageUrl": "./assets/house-08.jpeg",
+        "imageGallery": [
+            "./assets/house-09.jpeg",
+            "./assets/house-02.jpeg",
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg"
+        ],
+        "meters": "105",
+        "wc": "2",
+        "rooms": "3",
+        "publishedBy": "João Silva",
+        "reference": "#0000000023"
+    },
+    {
+        "id": 24,
+        "name": "Casa de Campo em Aveiro",
+        "price": 275000,
+        "description": "Casa de campo charmosa situada em Aveiro, ideal para quem busca tranquilidade e contato com a natureza. Com 140 metros quadrados, esta propriedade oferece 3 quartos confortáveis, 2 casas de banho modernas e uma cozinha equipada. A sala de estar é acolhedora, com uma lareira tradicional. O amplo terreno ao redor da casa é perfeito para jardinagem e atividades ao ar livre.",
+        "category": "Comprar",
+        "location": "Aveiro",
+        "imageUrl": "./assets/house-09.jpeg",
+        "imageGallery": [
+            "./assets/house-02.jpeg",
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg",
+            "./assets/house-05.jpeg"
+        ],
+        "meters": "140",
+        "wc": "2",
+        "rooms": "3",
+        "publishedBy": "Maria Ferreira",
+        "reference": "#0000000024"
+    },
+    {
+        "id": 25,
+        "name": "Apartamento T2 em Leiria",
+        "price": 1100,
+        "description": "Apartamento T2 situado em Leiria, ideal para quem busca conforto e praticidade. Com 85 metros quadrados, este apartamento oferece 2 quartos confortáveis, 1 casa de banho moderna e uma cozinha equipada. A sala de estar é espaçosa e luminosa, com uma varanda. Próximo a transportes públicos, lojas e restaurantes, este apartamento é perfeito para quem deseja viver com conveniência.",
+        "category": "Arrendar",
+        "location": "Leiria",
+        "imageUrl": "./assets/house-06.jpeg",
+        "imageGallery": [
+            "./assets/house-07.jpeg",
+            "./assets/house-08.jpeg",
+            "./assets/house-09.jpeg",
+            "./assets/house-02.jpeg"
+        ],
+        "meters": "85",
+        "wc": "1",
+        "rooms": "2",
+        "publishedBy": "Laura Santos",
+        "reference": "#0000000025"
+    },
+    {
+        "id": 26,
+        "name": "Vivenda Moderna em Setúbal",
+        "price": 450000,
+        "description": "Vivenda moderna localizada em Setúbal, ideal para famílias que valorizam espaço e conforto. Com 230 metros quadrados, esta casa oferece 4 quartos amplos, 3 casas de banho modernas e uma cozinha totalmente equipada. A sala de estar é espaçosa e possui acesso ao jardim e à piscina privativa. Próxima a escolas, parques e praias, esta vivenda é perfeita para quem deseja uma vida tranquila e confortável.",
+        "category": "Comprar",
+        "location": "Setúbal",
+        "imageUrl": "./assets/house-04.jpeg",
+        "imageGallery": [
+            "./assets/house-05.jpeg",
+            "./assets/house-06.jpeg",
+            "./assets/house-07.jpeg",
+            "./assets/house-08.jpeg"
+        ],
+        "meters": "230",
+        "wc": "3",
+        "rooms": "4",
+        "publishedBy": "Tiago Almeida",
+        "reference": "#0000000026"
+    },
+    {
+        "id": 27,
+        "name": "Apartamento T1 em Viseu",
+        "price": 950,
+        "description": "Apartamento T1 bem localizado em Viseu, ideal para solteiros ou casais. Com 55 metros quadrados, este apartamento oferece um quarto confortável, uma casa de banho moderna e uma cozinha equipada. A sala de estar é luminosa e possui uma varanda. Próximo a transportes públicos, lojas e restaurantes, este apartamento é perfeito para quem deseja viver com conveniência no centro da cidade.",
+        "category": "Arrendar",
+        "location": "Viseu",
+        "imageUrl": "./assets/house-08.jpeg",
+        "imageGallery": [
+            "./assets/house-09.jpeg",
+            "./assets/house-02.jpeg",
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg"
+        ],
+        "meters": "55",
+        "wc": "1",
+        "rooms": "1",
+        "publishedBy": "João Silva",
+        "reference": "#0000000027"
+    },
+    {
+        "id": 28,
+        "name": "Moradia de Luxo em Cascais",
+        "price": 950000,
+        "description": "Moradia de luxo situada em Cascais, com vista deslumbrante para o mar. Com 400 metros quadrados, esta propriedade oferece 6 quartos espaçosos, 5 casas de banho modernas e uma cozinha gourmet. A sala de estar é ampla e luminosa, com acesso a um terraço com vistas panorâmicas do oceano. O jardim bem cuidado é perfeito para relaxar e desfrutar do ambiente costeiro. Ideal para quem deseja uma vida de luxo junto ao mar.",
+        "category": "Comprar",
+        "location": "Cascais",
+        "imageUrl": "./assets/house-05.jpeg",
+        "imageGallery": [
+            "./assets/house-09.jpeg",
+            "./assets/house-02.jpeg",
+            "./assets/house-03.jpeg",
+            "./assets/house-04.jpeg"
+        ],
+        "meters": "400",
+        "wc": "5",
+        "rooms": "6",
+        "publishedBy": "Maria Ferreira",
+        "reference": "#0000000028"
+    },
+    {
+        "id": 29,
+        "name": "Apartamento T2 em Coimbra",
+        "price": 1150,
+        "description": "Apartamento T2 situado em Coimbra, ideal para estudantes ou jovens profissionais. Com 80 metros quadrados, este apartamento oferece 2 quartos confortáveis, 1 casa de banho moderna e uma cozinha equipada. A sala de estar é luminosa e possui uma varanda. Próximo a universidades, cafés e transportes públicos, este apartamento é perfeito para quem deseja viver com conveniência.",
+        "category": "Arrendar",
+        "location": "Coimbra",
+        "imageUrl": "./assets/house-06.jpeg",
+        "imageGallery": [
+            "./assets/house-07.jpeg",
+            "./assets/house-08.jpeg",
+            "./assets/house-09.jpeg",
+            "./assets/house-02.jpeg"
+        ],
+        "meters": "80",
+        "wc": "1",
+        "rooms": "2",
+        "publishedBy": "Laura Santos",
+        "reference": "#0000000029"
     }
 ]
