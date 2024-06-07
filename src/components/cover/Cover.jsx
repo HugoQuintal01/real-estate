@@ -1,7 +1,15 @@
 import React from "react";
+import products from "../../products/products.json";
 
 const Cover = () => {
-    return(
+    // Extract unique typologies from products and sort them
+    const uniqueTypologies = [...new Set(products.map(product => product.rooms))];
+    uniqueTypologies.sort((a, b) => parseInt(a) - parseInt(b));
+
+    // Extract unique locations from products
+    const uniqueLocations = [...new Set(products.map(product => product.location))];
+
+    return (
         <section className="cover-section gridrowfull">
             <div className="cover-opacity"></div>
             <div className="cover-text col-12 col-t-12 col-d-12">
@@ -20,17 +28,20 @@ const Cover = () => {
                 <div className="input-div col-12 col-t-6 col-d-3">
                     <label htmlFor="typology-id">Tipologia</label>
                     <select name="typology" id="typology-id">
-                        <option value="t0">T0</option>
-                        <option value="t1">T1</option>
-                        <option value="t2">T2</option>
-                        <option value="t3">T3</option>
-                        <option value="t4">T4</option>
-                        <option value="t5">T5</option>
+                        <option value="">Selecionar Tipologia</option>
+                        {uniqueTypologies.map((typology, index) => (
+                            <option key={index} value={typology}>T{typology}</option>
+                        ))}
                     </select>
                 </div>
                 <div className="input-div col-12 col-t-6 col-d-3">
                     <label htmlFor="location-id">Localização</label>
-                    <input name="localizacao" id="location-id" placeholder="Inserir localização" type="text" />
+                    <select name="localizacao" id="location-id">
+                        <option value="">Selecionar Localização</option>
+                        {uniqueLocations.map((loc, index) => (
+                            <option key={index} value={loc}>{loc}</option>
+                        ))}
+                    </select>
                 </div>
                 <div className="search-button col-12 col-t-6 col-d-3">
                     <button>Procurar</button>
