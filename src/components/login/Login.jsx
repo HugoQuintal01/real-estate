@@ -41,9 +41,12 @@ const Login = ({ toggleHideLogin }) => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <span className="no-account" id="no-account-id" onClick={toggleHideLogin}>
-                    Don't have an account?
-                </span>
+                {/*
+                    <span className="no-account" id="no-account-id" onClick={toggleHideLogin}>
+                        Don't have an account?
+                    </span>
+                */}
+                
                 <button type="submit">Login</button>
             </div>
         </form>

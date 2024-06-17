@@ -1624,8 +1624,7 @@ p, li, div, span, a {
   height: 100%;
   align-content: flex-start;
   justify-content: center;
-  padding: 200px 50px !important;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 0 0 50px 0;
 }
 .login-container .login-title {
   position: relative;
@@ -1635,6 +1634,7 @@ p, li, div, span, a {
   text-transform: uppercase;
   font-weight: 600;
   display: block;
+  color: #151515;
 }
 .login-container .login-title span {
   margin-top: 20px;
@@ -1646,9 +1646,8 @@ p, li, div, span, a {
 .login-container .login-title::after {
   content: "";
   position: absolute;
-  left: 15px;
   bottom: -30px;
-  width: 70%;
+  width: 100%;
   height: 2px;
   border-radius: 15px;
   background-color: #151515;
@@ -1660,10 +1659,11 @@ p, li, div, span, a {
   display: block;
   margin: 3px 0;
   width: 100%;
+  color: #1A4D2E;
 }
 .login-container .login-items input {
   margin: 3px 0;
-  width: calc(70% + 20px);
+  width: 100%;
   border: none;
   border-bottom: 1px solid #151515;
   font-size: 1.2em;
@@ -1715,24 +1715,6 @@ p, li, div, span, a {
   color: #ffffff;
 }
 
-@media (min-width: 850px) and (max-width: 1600px) {
-  body .login-container {
-    padding: 100px 50px 50px 50px !important;
-  }
-  body .login-container .login-title h3 {
-    font-size: 2em;
-  }
-  body .login-container .login-items input {
-    font-size: 1em;
-  }
-  body .login-container .login-items input ~ label {
-    margin-top: 20px;
-  }
-  body .login-container .login-title span {
-    margin-top: 10px;
-    font-size: 1em;
-  }
-}
 .hide-login {
   display: flex;
   justify-content: center;
