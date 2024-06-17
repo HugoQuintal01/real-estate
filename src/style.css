@@ -1614,6 +1614,148 @@ p, li, div, span, a {
   margin: 5px 0;
 }
 
+.login-section {
+  position: relative;
+  height: 100vh;
+  align-content: center;
+}
+
+.login-container {
+  height: 100%;
+  align-content: flex-start;
+  justify-content: center;
+  padding: 200px 50px !important;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.login-container .login-title {
+  position: relative;
+}
+.login-container .login-title h3 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+}
+.login-container .login-title span {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: 300;
+  display: block;
+  color: #1A4D2E;
+}
+.login-container .login-title::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: -30px;
+  width: 70%;
+  height: 2px;
+  border-radius: 15px;
+  background-color: #151515;
+}
+.login-container .login-items {
+  margin-top: 60px;
+}
+.login-container .login-items label {
+  display: block;
+  margin: 3px 0;
+  width: 100%;
+}
+.login-container .login-items input {
+  margin: 3px 0;
+  width: calc(70% + 20px);
+  border: none;
+  border-bottom: 1px solid #151515;
+  font-size: 1.2em;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.login-container .login-items input ~ label {
+  margin-top: 30px;
+}
+.login-container .login-items input::-moz-placeholder {
+  font-size: 0.8em;
+}
+.login-container .login-items input::placeholder {
+  font-size: 0.8em;
+}
+.login-container .login-items input.repeat-password {
+  margin-top: 20px;
+}
+.login-container .login-items span {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  color: #1A4D2E;
+}
+.login-container .login-items span:hover {
+  text-decoration: underline;
+}
+.login-container .login-items button {
+  display: block;
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #151515;
+  border-radius: 25px;
+  padding: 7px 25px;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1em;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.login-container .login-items button:hover {
+  background-color: #1A4D2E;
+  border-color: #1A4D2E;
+  color: #ffffff;
+}
+
+@media (min-width: 850px) and (max-width: 1600px) {
+  body .login-container {
+    padding: 100px 50px 50px 50px !important;
+  }
+  body .login-container .login-title h3 {
+    font-size: 2em;
+  }
+  body .login-container .login-items input {
+    font-size: 1em;
+  }
+  body .login-container .login-items input ~ label {
+    margin-top: 20px;
+  }
+  body .login-container .login-title span {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+}
+.hide-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition: left 1s cubic-bezier(0.5, 0, 0.15, 1);
+}
+.hide-login.active {
+  left: 50%;
+}
+.hide-login h2 {
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 /* Mobile devices (portrait and landscape) */
 @media only screen and (max-width: 767px) {
   body {
