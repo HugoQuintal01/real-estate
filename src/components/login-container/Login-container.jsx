@@ -13,8 +13,8 @@ const LoginContainer = () => {
     return (
         <section className="login-section gridrowfull">
             <Login toggleHideLogin={toggleHideLogin} />
-            <Register toggleHideLogin={toggleHideLogin} />
-            <HideLogin isActive={hideLoginActive} />
+            {/* <Register toggleHideLogin={toggleHideLogin} /> */}
+            {/* <HideLogin isActive={hideLoginActive} /> */}
         </section>
     );
 }
