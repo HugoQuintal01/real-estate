@@ -1,9 +1,14 @@
-import React, { useState } from "react";
-import { doSignUserWithEmailAndPassword } from "../../firebase/auth";
+// src/components/Login.jsx
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { doSignUserWithEmailAndPassword } from '../../firebase/auth';
+import { useAuth } from '../../contexts/authContext';
 
 const Login = ({ toggleHideLogin }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const { login } = useAuth();
+    const navigate = useNavigate();
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -11,7 +16,7 @@ const Login = ({ toggleHideLogin }) => {
         try {
             await doSignUserWithEmailAndPassword(email, password);
             alert('Login successful');
-            // Here, you can redirect the user or set authentication state using the context
+            navigate('/'); // Redirect to the homepage
         } catch (error) {
             console.error('Login error:', error.message);
             alert('Invalid credentials');
@@ -41,12 +46,6 @@ const Login = ({ toggleHideLogin }) => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                {/*
-                    <span className="no-account" id="no-account-id" onClick={toggleHideLogin}>
-                        Don't have an account?
-                    </span>
-                */}
-                
                 <button type="submit">Login</button>
             </div>
         </form>
