@@ -46,7 +46,9 @@ const Menu = () => {
                 {userLoggedIn && (
                     <div className="user-controls">
                         <div className="user-icon">
-                            <span>Conta</span>
+                            <a href="/account">
+                                <img src="/path-to-user-icon.png" alt="User Icon" />
+                            </a>
                         </div>
                         <button onClick={handleLogout}>Logout</button>
                     </div>

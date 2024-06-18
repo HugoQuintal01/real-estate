@@ -1,10 +1,13 @@
+// src/App.js
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import ProductPage from "./pages/ProductPage";
 import BuyPage from "./pages/Buy";
 import LoginPage from "./pages/LoginPage";
+import Account from "./pages/Account";
 import { AuthProvider } from './contexts/authContext';
+import PrivateRoute from './components/privateRoute/PrivateRoute';
 
 const App = () => {
     return (
@@ -15,6 +18,7 @@ const App = () => {
                     <Route path="/product/:productId" element={<ProductPage />} />
                     <Route path="/lista-imoveis" element={<BuyPage />} />
                     <Route path="/login" element={<LoginPage />} />
+                    <Route path="/account" element={<PrivateRoute element={<Account />} />} />
                 </Routes>
             </Router>
         </AuthProvider>
