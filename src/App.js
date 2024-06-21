@@ -8,6 +8,7 @@ import LoginPage from "./pages/LoginPage";
 import Account from "./pages/Account";
 import { AuthProvider } from './contexts/authContext';
 import PrivateRoute from './components/privateRoute/PrivateRoute';
+import ManagePage from "./pages/ManagePage";
 
 const App = () => {
     return (
@@ -18,7 +19,8 @@ const App = () => {
                     <Route path="/product/:productId" element={<ProductPage />} />
                     <Route path="/lista-imoveis" element={<BuyPage />} />
                     <Route path="/login" element={<LoginPage />} />
-                    <Route path="/account" element={<PrivateRoute element={<Account />} />} />
+                    <Route path="/conta" element={<PrivateRoute element={<Account />} />} />
+                    <Route path="/gerir-imoveis" element={<PrivateRoute element={<ManagePage />} />} />
                 </Routes>
             </Router>
         </AuthProvider>

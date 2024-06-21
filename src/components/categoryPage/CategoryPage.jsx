@@ -8,6 +8,7 @@ const CategoryPageTitle = () => {
     const [priceRange, setPriceRange] = useState([0, 0]);
     const [roomCount, setRoomCount] = useState([0, 0]);
     const [sizeRange, setSizeRange] = useState([0, 0]);
+    const [location, setLocation] = useState("");
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(0);
     const [minRooms, setMinRooms] = useState(0);
@@ -15,6 +16,9 @@ const CategoryPageTitle = () => {
     const [minSize, setMinSize] = useState(0);
     const [maxSize, setMaxSize] = useState(0);
     const [sortOrder, setSortOrder] = useState("alphabet-asc");
+
+    // Extract unique locations from products
+    const uniqueLocations = [...new Set(products.map(product => product.location))];
 
     useEffect(() => {
         const filteredProducts = products.filter(product => product.category === category);
@@ -37,6 +41,7 @@ const CategoryPageTitle = () => {
     const filteredProducts = products.filter(product => {
         return (
             product.category === category &&
+            (location === "" || product.location === location) &&
             product.price >= priceRange[0] && product.price <= priceRange[1] &&
             product.rooms >= roomCount[0] && product.rooms <= roomCount[1] &&
             product.meters >= sizeRange[0] && product.meters <= sizeRange[1]
@@ -84,6 +89,15 @@ const CategoryPageTitle = () => {
                             </select>
                         </label>
                         <label>
+                            Localização:
+                            <select value={location} onChange={e => setLocation(e.target.value)}>
+                                <option value="">Todas</option>
+                                {uniqueLocations.map(loc => (
+                                    <option key={loc} value={loc}>{loc}</option>
+                                ))}
+                            </select>
+                        </label>
+                        <label>
                             Preço Mínimo:
                             <input type="range" min={minPrice} max={maxPrice} value={priceRange[0]} onChange={e => setPriceRange([Number(e.target.value), priceRange[1]])} />
                             <span className="input-value">{priceRange[0].toLocaleString()}€</span>
@@ -115,6 +129,7 @@ const CategoryPageTitle = () => {
                         </label>
                         <button className="reset-button" onClick={() => {
                             setCategory("Comprar");
+                            setLocation("");
                             setPriceRange([minPrice, maxPrice]);
                             setRoomCount([minRooms, maxRooms]);
                             setSizeRange([minSize, maxSize]);
