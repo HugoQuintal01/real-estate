@@ -160,6 +160,19 @@
             align-content: flex-start;
             flex-wrap: wrap;
 
+            .no-results-message{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+
+                p{
+                    font-size: 1.4em;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
             .category-items-order{
                 display: flex;
                 justify-content: flex-end;

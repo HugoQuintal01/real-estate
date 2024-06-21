@@ -153,29 +153,35 @@ const CategoryPageTitle = () => {
                             </select>
                         </label>
                     </div>
-                    {sortedProducts.map(product => (
-                        <Link to={`/product/${product.id}`} className="highlight-item col-8 col-t-6 col-d-3" key={product.id}>
-                            <div className="highlight-item-image">
-                                <img src={imageMap[product.imageUrl]} alt={product.name} />
-                            </div>
-                            <div className="highlight-item-type">
-                                <span>{product.category}</span>
-                            </div>
-                            <div className="highlight-item-info">
-                                <div className="highlight-item-title">
-                                    <h4>{product.name}</h4>
+                    {sortedProducts.length === 0 ? (
+                        <div className="no-results-message">
+                            <p>Não encontramos nenhum imóvel com esses parâmetros.</p>
+                        </div>
+                    ) : (
+                        sortedProducts.map(product => (
+                            <Link to={`/product/${product.id}`} className="highlight-item col-8 col-t-6 col-d-3" key={product.id}>
+                                <div className="highlight-item-image">
+                                    <img src={imageMap[product.imageUrl]} alt={product.name} />
                                 </div>
-                                <div className="highlight-item-price">
-                                    <span>{product.price.toLocaleString()}€</span>
+                                <div className="highlight-item-type">
+                                    <span>{product.category}</span>
                                 </div>
-                                <div className="highlight-item-more-info">
-                                    <span>{product.rooms} quartos</span>
-                                    <span>{product.meters} m²</span>
-                                    <span>{product.wc} wc</span>
+                                <div className="highlight-item-info">
+                                    <div className="highlight-item-title">
+                                        <h4>{product.name}</h4>
+                                    </div>
+                                    <div className="highlight-item-price">
+                                        <span>{product.price.toLocaleString()}€</span>
+                                    </div>
+                                    <div className="highlight-item-more-info">
+                                        <span>{product.rooms} quartos</span>
+                                        <span>{product.meters} m²</span>
+                                        <span>{product.wc} wc</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </Link>
-                    ))}
+                            </Link>
+                        ))
+                    )}
                 </div>
             </div>
         </section>

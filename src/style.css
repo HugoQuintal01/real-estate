@@ -1523,6 +1523,17 @@ p, li, div, span, a {
   align-content: flex-start;
   flex-wrap: wrap;
 }
+.category-section .category-content .category-items .no-results-message {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.category-section .category-content .category-items .no-results-message p {
+  font-size: 1.4em;
+  width: 100%;
+  text-align: center;
+}
 .category-section .category-content .category-items .category-items-order {
   display: flex;
   justify-content: flex-end;
@@ -1791,9 +1802,10 @@ p, li, div, span, a {
   margin-top: 20px;
 }
 .footer-section .footer-content .footer-pages ul li {
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 300;
   margin-top: 10px;
+  text-transform: uppercase;
 }
 
 /* Mobile devices (portrait and landscape) */
