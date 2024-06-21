@@ -1,0 +1,78 @@
+.footer-section{
+    background-color: $primary;
+    padding: 100px 0;
+
+    *{
+        color: $white;
+    }
+
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+
+        .footer-branding{
+
+            h2{
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+
+            p{
+                margin-top: 20px;
+                font-size: 1.4em;
+                font-weight: 300;
+                line-height: 1.2em;
+                width: 80%;
+            }
+        }
+
+        .footer-contact{
+            justify-content: center;
+
+            h3{
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 2em;
+            }
+
+            p{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                margin-top: 20px;
+                font-size: 1em;
+                font-weight: 300;
+
+                a{
+                    width: 100%;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .footer-pages{
+
+            h3{
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 2em;
+            }
+
+            ul{
+                margin-top: 20px;
+
+                li{
+                    font-size: 1.4em;
+                    font-weight: 300;
+                    margin-top: 10px;
+                }
+            }
+
+            
+        }
+    }
+
+    
+}
