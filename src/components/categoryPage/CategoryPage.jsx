@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import products from "../../products/products.json";
 import imageMap from '../../assets/imageMap';
 
 const CategoryPageTitle = () => {
-    const [category, setCategory] = useState("Comprar");
+    const location = useLocation();
+    const searchParams = new URLSearchParams(location.search);
+
+    // State variables to hold filter values
+    const [category, setCategory] = useState(searchParams.get("type") || "Comprar");
+    const [typology, setTypology] = useState(searchParams.get("typology") || "");
+    const [filterLocation, setFilterLocation] = useState(searchParams.get("location") || "");
     const [priceRange, setPriceRange] = useState([0, 0]);
     const [roomCount, setRoomCount] = useState([0, 0]);
     const [sizeRange, setSizeRange] = useState([0, 0]);
-    const [location, setLocation] = useState("");
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(0);
     const [minRooms, setMinRooms] = useState(0);
@@ -17,9 +23,9 @@ const CategoryPageTitle = () => {
     const [maxSize, setMaxSize] = useState(0);
     const [sortOrder, setSortOrder] = useState("alphabet-asc");
 
-    // Extract unique locations from products
     const uniqueLocations = [...new Set(products.map(product => product.location))];
 
+    // Fetch products based on category and initialize filter ranges
     useEffect(() => {
         const filteredProducts = products.filter(product => product.category === category);
         if (filteredProducts.length > 0) {
@@ -32,22 +38,27 @@ const CategoryPageTitle = () => {
         }
     }, [category]);
 
+    // Initialize filter ranges based on the fetched products
     useEffect(() => {
         setPriceRange([minPrice, maxPrice]);
         setRoomCount([minRooms, maxRooms]);
         setSizeRange([minSize, maxSize]);
     }, [minPrice, maxPrice, minRooms, maxRooms, minSize, maxSize]);
 
+    // Filter products based on current filter values
     const filteredProducts = products.filter(product => {
+        const typologyRooms = typology ? parseInt(typology, 10) : 0;
         return (
             product.category === category &&
-            (location === "" || product.location === location) &&
+            (filterLocation === "" || product.location === filterLocation) &&
             product.price >= priceRange[0] && product.price <= priceRange[1] &&
+            product.rooms >= typologyRooms &&
             product.rooms >= roomCount[0] && product.rooms <= roomCount[1] &&
             product.meters >= sizeRange[0] && product.meters <= sizeRange[1]
         );
     });
 
+    // Sort the filtered products based on the selected sort order
     const sortedProducts = [...filteredProducts].sort((a, b) => {
         const [criteria, order] = sortOrder.split("-");
         let comparison = 0;
@@ -90,7 +101,7 @@ const CategoryPageTitle = () => {
                         </label>
                         <label>
                             Localização:
-                            <select value={location} onChange={e => setLocation(e.target.value)}>
+                            <select value={filterLocation} onChange={e => setFilterLocation(e.target.value)}>
                                 <option value="">Todas</option>
                                 {uniqueLocations.map(loc => (
                                     <option key={loc} value={loc}>{loc}</option>
@@ -129,7 +140,8 @@ const CategoryPageTitle = () => {
                         </label>
                         <button className="reset-button" onClick={() => {
                             setCategory("Comprar");
-                            setLocation("");
+                            setFilterLocation("");
+                            setTypology("");
                             setPriceRange([minPrice, maxPrice]);
                             setRoomCount([minRooms, maxRooms]);
                             setSizeRange([minSize, maxSize]);
@@ -160,7 +172,7 @@ const CategoryPageTitle = () => {
                     ) : (
                         sortedProducts.map(product => (
                             <Link to={`/product/${product.id}`} className="highlight-item col-8 col-t-6 col-d-3" key={product.id}>
-                                <div className="highlight-item-image">
+                                                                <div className="highlight-item-image">
                                     <img src={imageMap[product.imageUrl]} alt={product.name} />
                                 </div>
                                 <div className="highlight-item-type">
