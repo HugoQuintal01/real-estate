@@ -9,4 +9,4 @@ Welcome to the Real Estate App! This application is built with React and is desi
 - Property Details: View in-depth details about each property, including images, price, location, and description.
 
 ## Demo
-- https://hugoquintal01.github.io/real-state/
+- https://hugoquintal01.github.io/real-estate/
