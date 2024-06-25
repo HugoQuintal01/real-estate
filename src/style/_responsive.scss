@@ -161,6 +161,167 @@
         .steps-section .steps-container .steps:last-child{
             margin-bottom: 0;
         }
+
+        .cover-section .cover-text h1{
+            font-size: 2.6em;
+            letter-spacing: 5px;
+            line-height: 1.2em;
+        }
+
+        .cover-section .cover-text p{
+            width: 100%;
+        }
+
+        .cover-section .cover-search{
+            margin: 50px 20px 0;
+        }
+
+        .cover-section .cover-search .input-div select{
+            margin-top: 10px;
+        }
+
+        .cover-section .cover-search .input-div{
+            margin-top: 20px;
+
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+
+        .cover-section .cover-search .input-div label{
+            text-align: center;
+        }
+
+        .cover-section .cover-search .search-button{
+            margin-top: 20px;
+        }
+
+        .highlight-section .highlight-title span{
+            line-height: 1.2em;
+        }
+
+        .highlight-section .highlight-list{
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .highlight-section .highlight-list .highlight-item{
+            width: 300px;
+            min-width: 300px;
+        }
+
+        .highlight-comprar-section .highlight-title span{
+            line-height: 1.2em;
+        }
+
+        .highlight-comprar-section .highlight-list{
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .highlight-comprar-section .highlight-list .highlight-item{
+            width: 300px;
+            min-width: 300px;
+        }
+
+        .highlight-arrendar-section .highlight-title span{
+            line-height: 1.2em;
+        }
+
+        .highlight-arrendar-section .highlight-list{
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .highlight-arrendar-section .highlight-list .highlight-item{
+            width: 300px;
+            min-width: 300px;
+        }
+
+        .footer-section{
+            padding: 50px 0;
+        }
+
+        .footer-section .footer-content{
+            flex-wrap: wrap;
+        }
+
+        .footer-section .footer-content .footer-contact{
+            margin-top: 30px;
+        }
+
+        .footer-section .footer-content .footer-pages{
+            margin-top: 30px;
+        }
+
+        .footer-section .footer-content .footer-contact p{
+            margin-top: 10px;
+        }
+
+        .footer-section .footer-content .footer-pages ul{
+            margin-top: 10px;
+        }
+
+        .footer-section .footer-content .footer-branding p{
+            margin-top: 10px;
+        }
+
+        .product-detail .product-image .product-images .main-image{
+            height: 400px;
+        }
+
+        .product-detail .product-image .product-images .image-nav{
+            width: 90%;
+        }
+
+        .product-detail .product-info .product-content{
+            padding: 50px 0;
+        }
+
+        .product-detail .product-info .product-content h1{
+            font-size: 2em;
+            padding-bottom: 10px;
+        }
+
+        .product-detail .product-info .product-content .product-category{
+            font-size: 1.2em;
+        }
+
+        .product-detail .product-info{
+            margin-top: 20px;
+        }
+
+        .product-detail .product-info .product-contact-info{
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        .product-detail .product-info .product-contact-info .published-person{
+            width: 100%;
+        }
+
+        .product-detail .product-info .product-contact-info .published-person .published-person-content{
+            margin-left: 20px;
+        }
+
+        .product-detail .product-info .product-contact-info .product-reference{
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .product-detail .product-info .product-content .product-button{
+            margin-top: 40px;
+        }
+
     }
 
 }

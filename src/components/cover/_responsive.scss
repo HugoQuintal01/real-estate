@@ -1,0 +1,56 @@
+// Mobile
+@media only screen and (max-width: 767px) {
+    body{
+        .cover-section .cover-text h1{
+            font-size: 3em;
+            letter-spacing: 5px;
+        }
+
+        .cover-section .cover-search{
+            margin: 50px 20px 0;
+        }
+
+        .cover-section .cover-search .input-div select{
+            margin-top: 10px;
+        }
+
+        .cover-section .cover-search .input-div{
+            margin-top: 20px;
+
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+
+        .cover-section .cover-search .input-div label{
+            text-align: center;
+        }
+
+        .cover-section .cover-search .search-button{
+            margin-top: 20px;
+        }
+
+        .highlight-section .highlight-title span{
+            line-height: 1.2em;
+        }
+
+        .highlight-section .highlight-list{
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        .highlight-section .highlight-list .highlight-item{
+            width: 300px;
+            min-width: 300px;
+        }
+    }
+}
+
+// Tablet
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+body{
+        
+    }
+}

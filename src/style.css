@@ -755,6 +755,7 @@ p, li, div, span, a {
   font-weight: 300;
   text-align: center;
   margin-top: 10px;
+  line-height: 1.2em;
 }
 .cover-section .cover-search {
   display: flex;
@@ -841,6 +842,43 @@ p, li, div, span, a {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 767px) {
+  body .cover-section .cover-text h1 {
+    font-size: 3em;
+    letter-spacing: 5px;
+  }
+  body .cover-section .cover-search {
+    margin: 50px 20px 0;
+  }
+  body .cover-section .cover-search .input-div select {
+    margin-top: 10px;
+  }
+  body .cover-section .cover-search .input-div {
+    margin-top: 20px;
+  }
+  body .cover-section .cover-search .input-div:first-child {
+    margin-top: 0;
+  }
+  body .cover-section .cover-search .input-div label {
+    text-align: center;
+  }
+  body .cover-section .cover-search .search-button {
+    margin-top: 20px;
+  }
+  body .highlight-section .highlight-title span {
+    line-height: 1.2em;
+  }
+  body .highlight-section .highlight-list {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  body .highlight-section .highlight-list .highlight-item {
+    width: 300px;
+    min-width: 300px;
+  }
+}
 .highlight-section {
   justify-content: center;
   flex-wrap: wrap;
@@ -1939,6 +1977,131 @@ p, li, div, span, a {
   }
   body .steps-section .steps-container .steps:last-child {
     margin-bottom: 0;
+  }
+  body .cover-section .cover-text h1 {
+    font-size: 2.6em;
+    letter-spacing: 5px;
+    line-height: 1.2em;
+  }
+  body .cover-section .cover-text p {
+    width: 100%;
+  }
+  body .cover-section .cover-search {
+    margin: 50px 20px 0;
+  }
+  body .cover-section .cover-search .input-div select {
+    margin-top: 10px;
+  }
+  body .cover-section .cover-search .input-div {
+    margin-top: 20px;
+  }
+  body .cover-section .cover-search .input-div:first-child {
+    margin-top: 0;
+  }
+  body .cover-section .cover-search .input-div label {
+    text-align: center;
+  }
+  body .cover-section .cover-search .search-button {
+    margin-top: 20px;
+  }
+  body .highlight-section .highlight-title span {
+    line-height: 1.2em;
+  }
+  body .highlight-section .highlight-list {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  body .highlight-section .highlight-list .highlight-item {
+    width: 300px;
+    min-width: 300px;
+  }
+  body .highlight-comprar-section .highlight-title span {
+    line-height: 1.2em;
+  }
+  body .highlight-comprar-section .highlight-list {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  body .highlight-comprar-section .highlight-list .highlight-item {
+    width: 300px;
+    min-width: 300px;
+  }
+  body .highlight-arrendar-section .highlight-title span {
+    line-height: 1.2em;
+  }
+  body .highlight-arrendar-section .highlight-list {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  body .highlight-arrendar-section .highlight-list .highlight-item {
+    width: 300px;
+    min-width: 300px;
+  }
+  body .footer-section {
+    padding: 50px 0;
+  }
+  body .footer-section .footer-content {
+    flex-wrap: wrap;
+  }
+  body .footer-section .footer-content .footer-contact {
+    margin-top: 30px;
+  }
+  body .footer-section .footer-content .footer-pages {
+    margin-top: 30px;
+  }
+  body .footer-section .footer-content .footer-contact p {
+    margin-top: 10px;
+  }
+  body .footer-section .footer-content .footer-pages ul {
+    margin-top: 10px;
+  }
+  body .footer-section .footer-content .footer-branding p {
+    margin-top: 10px;
+  }
+  body .product-detail .product-image .product-images .main-image {
+    height: 400px;
+  }
+  body .product-detail .product-image .product-images .image-nav {
+    width: 90%;
+  }
+  body .product-detail .product-info .product-content {
+    padding: 50px 0;
+  }
+  body .product-detail .product-info .product-content h1 {
+    font-size: 2em;
+    padding-bottom: 10px;
+  }
+  body .product-detail .product-info .product-content .product-category {
+    font-size: 1.2em;
+  }
+  body .product-detail .product-info {
+    margin-top: 20px;
+  }
+  body .product-detail .product-info .product-contact-info {
+    padding: 20px;
+    margin-top: 80px;
+  }
+  body .product-detail .product-info .product-contact-info .published-person {
+    width: 100%;
+  }
+  body .product-detail .product-info .product-contact-info .published-person .published-person-content {
+    margin-left: 20px;
+  }
+  body .product-detail .product-info .product-contact-info .product-reference {
+    width: 100%;
+    margin-top: 20px;
+  }
+  body .product-detail .product-info .product-content .product-button {
+    margin-top: 40px;
   }
 }
 /* Tablet devices (portrait and landscape) */
