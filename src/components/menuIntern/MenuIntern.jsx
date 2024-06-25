@@ -22,11 +22,8 @@ const MenuIntern = () => {
                 <a href="/">Real State</a>
             </div>
             <div className="pages col-d-8 col-6 col-t-6">
-                <div className="page-item">
-                    <a href="/lista-imoveis">Imóveis</a>
-                </div>
                 <div className="page-item contact-item">
-                    <a href="#scrollDown">Contactar</a>
+                    <a href="/lista-imoveis">Imóveis</a>
                 </div>
                 {userLoggedIn && (
                     <div className="user-controls">
