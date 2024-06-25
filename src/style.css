@@ -1993,7 +1993,7 @@ p, li, div, span, a {
     margin-top: 10px;
   }
   body .cover-section .cover-search .input-div {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   body .cover-section .cover-search .input-div:first-child {
     margin-top: 0;
@@ -2002,7 +2002,7 @@ p, li, div, span, a {
     text-align: center;
   }
   body .cover-section .cover-search .search-button {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   body .highlight-section .highlight-title span {
     line-height: 1.2em;
@@ -2102,6 +2102,48 @@ p, li, div, span, a {
   }
   body .product-detail .product-info .product-content .product-button {
     margin-top: 40px;
+  }
+  body .category-section {
+    padding: 0;
+  }
+  body .category-section .category-title span {
+    margin-top: 20px;
+  }
+  body .category-section .category-content {
+    padding: 0;
+  }
+  body .category-section .category-title {
+    margin-top: 20px;
+  }
+  body .category-section .category-title h1 {
+    font-size: 2.6em;
+    line-height: 1.2em;
+  }
+  body .category-section .category-title span {
+    line-height: 1.2em;
+  }
+  body .category-section .category-content {
+    margin-top: 40px;
+  }
+  body .category-section .category-content .category-items {
+    margin-top: 40px;
+    padding-bottom: 50px;
+  }
+  body .category-section .category-content .category-items .category-items-order {
+    padding: 0;
+  }
+  body .category-section .category-content .category-items .highlight-item {
+    width: 100%;
+    margin: 20px 0;
+  }
+  body .category-section .category-content .category-items .highlight-item .highlight-item-info .highlight-item-more-info span {
+    font-size: 1.4em;
+  }
+  body .category-section .category-content .category-items .highlight-item .highlight-item-info .highlight-item-price span {
+    font-size: 2.4em;
+  }
+  body .category-section .category-content .category-items .highlight-item .highlight-item-info .highlight-item-title h4 {
+    font-size: 1.4em;
   }
 }
 /* Tablet devices (portrait and landscape) */
