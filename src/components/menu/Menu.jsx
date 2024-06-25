@@ -34,7 +34,7 @@ const Menu = () => {
     return (
         <section id="menu" className={`menu gridrowfull ${menuActive ? 'menu-active' : ''}`}>
             <div className="website-name col-d-4 col-6 col-t-6">
-                <a href="/">Real State</a>
+                <a href="/">Real Estate</a>
             </div>
             <div className="pages col-d-8 col-6 col-t-6">
                 <div className="page-item contact-item">

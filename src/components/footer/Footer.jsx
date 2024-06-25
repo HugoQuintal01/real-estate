@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer-section gridrowfull">
             <div className="footer-content col-12">
                 <div className="footer-branding col-12 col-t-12 col-d-4">
-                    <h2>Real State</h2>
+                    <h2>Real Estate</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
                 </div>
                 <div className="footer-contact col-12 col-t-12 col-d-4">
