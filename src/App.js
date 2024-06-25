@@ -13,7 +13,7 @@ import ManagePage from "./pages/ManagePage";
 const App = () => {
     return (
         <AuthProvider>
-            <Router>
+            <Router basename={process.env.REACT_APP_URI}>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/product/:productId" element={<ProductPage />} />
