@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import ProductPage from "./pages/ProductPage";
 import BuyPage from "./pages/Buy";
@@ -16,16 +16,16 @@ function App () {
     
     return (
         <AuthProvider>
-            <Router basename={process.env.REACT_APP_URI || '/'}>
+            <BrowserRouter basename={process.env.REACT_APP_URI || '/'}>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/product/:productId" element={<ProductPage />} />
-                    <Route path="/lista-imoveis" element={<BuyPage />} />
-                    <Route path="/login" element={<LoginPage />} />
-                    <Route path="/conta" element={<PrivateRoute element={<Account />} />} />
-                    <Route path="/gerir-imoveis" element={<PrivateRoute element={<ManagePage />} />} />
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/product/:productId" element={<ProductPage />} />
+                    <Route exact path="/lista-imoveis" element={<BuyPage />} />
+                    <Route exact path="/login" element={<LoginPage />} />
+                    <Route exact path="/conta" element={<PrivateRoute element={<Account />} />} />
+                    <Route exact path="/gerir-imoveis" element={<PrivateRoute element={<ManagePage />} />} />
                 </Routes>
-            </Router>
+            </BrowserRouter>
         </AuthProvider>
     );
 };
