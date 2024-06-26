@@ -24,7 +24,7 @@ const MenuIntern = () => {
             </div>
             <div className="pages col-d-8 col-6 col-t-6">
                 <div className="page-item contact-item">
-                    <Link to="/lista-imoveis">Lista Imóveis</Link>
+                    <Link to="/lista-imoveis">Imóveis</Link>
                 </div>
                 {userLoggedIn && (
                     <div className="user-controls">

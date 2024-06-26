@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 
     .product-image{
         position: relative;
@@ -177,7 +178,7 @@
             display: flex;
             justify-content: flex-start;
             align-content: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             width: 65%;
 
             .published-person-image{

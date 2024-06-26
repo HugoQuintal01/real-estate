@@ -1174,6 +1174,7 @@ p, li, div, span, a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 .product-detail .product-image {
   position: relative;
@@ -1327,7 +1328,7 @@ p, li, div, span, a {
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 65%;
 }
 .product-detail .product-info .product-contact-info .published-person .published-person-image {
@@ -2198,6 +2199,23 @@ p, li, div, span, a {
     margin-top: 50px;
     padding-left: 15px;
     border-left: none;
+  }
+  body .product-detail .product-info .product-contact-info .published-person {
+    width: 100%;
+  }
+  body .product-detail .product-info .product-contact-info .product-reference {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+/* Laptops */
+@media only screen and (min-width: 1023px) and (max-width: 1340px) {
+  body .product-detail .product-info .product-contact-info .published-person {
+    width: 100%;
+  }
+  body .product-detail .product-info .product-contact-info .product-reference {
+    width: 100%;
+    margin-top: 30px;
   }
 }
 html {

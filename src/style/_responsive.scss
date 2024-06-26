@@ -450,6 +450,32 @@
             border-left: none;
         }
 
+        .product-detail .product-info .product-contact-info .published-person{
+            width: 100%;
+        }
+
+        .product-detail .product-info .product-contact-info .product-reference{
+            width: 100%;
+            margin-top: 30px;
+        }
+
     }
 
+}
+
+
+/* Laptops */
+@media only screen and (min-width: 1023px) and (max-width: 1340px) {
+
+    body{
+
+        .product-detail .product-info .product-contact-info .published-person{
+            width: 100%;
+        }
+
+        .product-detail .product-info .product-contact-info .product-reference{
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
 }
