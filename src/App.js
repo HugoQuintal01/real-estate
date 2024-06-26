@@ -16,15 +16,15 @@ function App () {
     
     return (
         <AuthProvider>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <BrowserRouter basename={process.env.REACT_APP_URI || '/'}>
                 <div className="App">
                     <Routes>
-                        <Route exact path="/" element={<Home />} />
-                        <Route exact path="/product/:productId" element={<ProductPage />} />
-                        <Route exact path="/lista-imoveis" element={<BuyPage />} />
-                        <Route exact path="/login" element={<LoginPage />} />
-                        <Route exact path="/conta" element={<PrivateRoute element={<Account />} />} />
-                        <Route exact path="/gerir-imoveis" element={<PrivateRoute element={<ManagePage />} />} />
+                        <Route path="/" element={<Home />} />
+                        <Route path="/product/:productId" element={<ProductPage />} />
+                        <Route path="/lista-imoveis" element={<BuyPage />} />
+                        <Route path="/login" element={<LoginPage />} />
+                        <Route path="/conta" element={<PrivateRoute element={<Account />} />} />
+                        <Route path="/gerir-imoveis" element={<PrivateRoute element={<ManagePage />} />} />
                     </Routes>
                 </div>
             </BrowserRouter>
