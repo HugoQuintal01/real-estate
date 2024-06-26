@@ -1867,6 +1867,9 @@ p, li, div, span, a {
     display: flex;
     margin: 0;
   }
+  body .cover-section {
+    padding: 150px 0;
+  }
   body .cover-section .cover-left .cover-title span {
     font-size: 3em;
   }
@@ -2138,13 +2141,13 @@ p, li, div, span, a {
     margin: 20px 0;
   }
   body .category-section .category-content .category-items .highlight-item .highlight-item-info .highlight-item-more-info span {
-    font-size: 1.4em;
+    font-size: 1em;
   }
   body .category-section .category-content .category-items .highlight-item .highlight-item-info .highlight-item-price span {
     font-size: 2.4em;
   }
   body .category-section .category-content .category-items .highlight-item .highlight-item-info .highlight-item-title h4 {
-    font-size: 1.4em;
+    font-size: 1em;
   }
 }
 /* Tablet devices (portrait and landscape) */
