@@ -16,7 +16,7 @@ function App () {
     
     return (
         <AuthProvider>
-            <BrowserRouter basename={process.env.REACT_APP_URI || '/'}>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <div className="App">
                     <Routes>
                         <Route path="/" element={<Home />} />
