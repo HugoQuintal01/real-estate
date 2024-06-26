@@ -10,7 +10,7 @@ import { AuthProvider } from './contexts/authContext';
 import PrivateRoute from './components/privateRoute/PrivateRoute';
 import ManagePage from "./pages/ManagePage";
 
-const App = () => {
+function App () {
     return (
         <AuthProvider>
             <Router basename={process.env.REACT_APP_URI}>
