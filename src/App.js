@@ -1,5 +1,4 @@
-// src/App.js
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import ProductPage from "./pages/ProductPage";
@@ -11,9 +10,13 @@ import PrivateRoute from './components/privateRoute/PrivateRoute';
 import ManagePage from "./pages/ManagePage";
 
 function App () {
+    useEffect(() => {
+        console.log(`App is running at: ${window.location.href}`);
+    }, []);
+    
     return (
         <AuthProvider>
-            <Router basename={process.env.REACT_APP_URI}>
+            <Router basename={process.env.REACT_APP_URI || '/'}>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/product/:productId" element={<ProductPage />} />
