@@ -21,10 +21,10 @@ function App () {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/product/:productId" element={<ProductPage />} />
-                        <Route path="/real-estate/lista-imoveis" element={<BuyPage />} />
-                        <Route path="/real-estate/login" element={<LoginPage />} />
-                        <Route path="/real-estate/conta" element={<PrivateRoute element={<Account />} />} />
-                        <Route path="/real-estate/gerir-imoveis" element={<PrivateRoute element={<ManagePage />} />} />
+                        <Route path="/lista-imoveis" element={<BuyPage />} />
+                        <Route path="/login" element={<LoginPage />} />
+                        <Route path="/conta" element={<PrivateRoute element={<Account />} />} />
+                        <Route path="/gerir-imoveis" element={<PrivateRoute element={<ManagePage />} />} />
                     </Routes>
                 </div>
             </BrowserRouter>
