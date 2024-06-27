@@ -2149,6 +2149,10 @@ p, li, div, span, a {
   body .category-section .category-content .category-items .highlight-item .highlight-item-info .highlight-item-title h4 {
     font-size: 1em;
   }
+  body .product-detail .product-info .product-content .product-button:last-child {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 /* Tablet devices (portrait and landscape) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
