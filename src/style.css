@@ -2106,6 +2106,7 @@ p, li, div, span, a {
   }
   body .product-detail .product-info .product-content .product-button {
     margin-top: 40px;
+    margin-right: 20px;
   }
   body .category-section {
     padding: 0;
